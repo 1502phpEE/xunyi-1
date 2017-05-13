@@ -1,0 +1,312 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- 时间统计 -->
+    <script type="text/javascript">
+    var performanceData = {};
+    performanceData.responseSuccessTime = new Date().getTime();
+
+    //添加domReady事件
+    if(document.addEventListener){
+        document.addEventListener("DOMContentLoaded",load("!IE-domReady"),false);
+    }else {
+        //ie浏览器检测doScroll方法是否可用来确定domReady时间
+        (function domReady () {
+            try{
+                document.documentElement.doScroll("left");
+                load("IE-domReady");
+            }catch(ex){
+                setTimeout(domReady,16);
+            }
+        })();
+    }
+
+    //时间记录fn
+    function load(str)
+    {
+        var requestTime = performanceData.responseSuccessTime;
+        performanceData[str] = new Date().getTime() - requestTime;
+    }
+
+    window.onload = load ("windowOnload_JS");
+</script>
+    <meta name="description" content="春雨手机诊所是专门为医生开发的手机应用，医生利用它对用户进行医疗咨询、随诊管理等工作，而用户来自春雨掌上医生" />
+    <meta name="keywords" content="春雨掌上医生,春雨手机诊所,健康,医疗,移动" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>
+        
+  	春雨诊所 - 欢迎医生加入
+
+    </title>
+
+<link rel="shortcut icon" href="https://dn-chunyu.qbox.me/@/static/favicon.ico"/>
+
+    <link rel="stylesheet" href="css/bootstrap-responsive.min_5.css" onload="load('开始渲染(白屏时间)')"/>
+    <link rel="stylesheet" href="css/bootstrap.min_5.css" />
+    <link rel="stylesheet" href="css/normalize_5.css" />
+    <link rel="stylesheet" href="css/clinic_1.css" />
+    <link rel="stylesheet" href="css/from_website_3.css"/>
+
+    <!--[if IE 6]>
+        <link href="css/ie6.min_3.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/from_website-ie_1.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/clinic-ie_1.css" />
+    <![endif]-->
+
+    
+        <style type="text/css" media="screen">
+            body.authed {
+                background-color: #ffffff;
+            }
+        </style>
+    
+
+    <link rel="stylesheet" href="css/mediaelementplayer_3.css" onload="load('样式加载完毕')"/>
+    <script>
+        
+            window.is_online_webserver = true;
+        
+
+        if(window.is_online_webserver){
+            var targetProtocol = "https:";
+            if (window.location.protocol != targetProtocol){
+                window.location.href = targetProtocol + window.location.href.substring(window.location.protocol.length);
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="authed" onload="load('windowOnload_HTML')">
+
+    
+        <div class="download-app">
+    <div class="download-app-win">
+        <div class="header"><span class="bt-close"></span></div>
+        <div class="content">
+        <ul class="ly-lst ly-lst-dl">
+            <li class="ly-lst-item">
+                <a href="http://itunes.apple.com/us/app/chun-yu-yi-sheng-duan/id531372360?mt=8" target="_blank" class="ly-dl-iphone"></a>
+                <h5 class="ly-txt-h7">iPhone下载</h5>
+            </li>
+            <li class="ly-lst-item">
+                <a href="http://api.chunyuyisheng.com/download/chunyu_clinic/latest/" class="ly-dl-android"></a>
+                <h5 class="ly-txt-h7">Android下载</h5>
+            </li>
+            <li class="ly-lst-item">
+                <a href="#" class="ly-dl-qr">
+                    <img src="picture/clinic_qr_1.png" />
+                </a>
+                <h5 class="ly-txt-h5">扫描二维码</h5>
+            </li>
+        </ul>
+        </div>
+    </div> 
+</div>
+<div class="overlay"></div>
+
+    
+
+	<div class="wrapper" onload="load('wrapperOnload_HTML')">
+
+        
+<div id="header">
+	<div id="headNav" class="container">
+		<a href="/ask/clinic" class="clinicNavLogo navSprite left">春雨诊所
+			<span class="logo"></span>
+		</a>
+		
+		<a href="/ask/clinic" class="left leftNavLink sel">首页</a>
+		<a id="app_download" class="left leftNavLink ">下载</a>
+		<a href="/" class="left leftNavLink">大众版</a>
+		<a href="/clinic/register" class="right rightNavLink">医生注册</a>
+		<span class="navSplit right">&#124;</span>
+		<a href="/ask/clinic" class="right rightNavLink">医生登录</a>
+		
+	</div>
+</div>
+
+
+        
+        
+
+        
+    <div id="content" style="min-height: 800px;">
+        <div class="container">
+            <div id="clinicIntro" class="left">
+            	<img src="picture/clinicintrobg_1.png" alt="春雨诊所"/>
+             		<div id="clinicDownloadIt">
+									<p style="font-size:24px; color:#858585; text-align: left; width: 170px;">点击下载<!--<span class="currentVersion">1.8版本</span>--></p>
+									<ul id="clinicAppPlatforms" style="width: 176px; margin-top:20px;">
+										<li><a href="http://itunes.apple.com/us/app/chun-yu-yi-sheng-duan/id531372360?mt=8" class="cliniciPhoneDl">iPhone</a></li>
+										<li><a href="http://api.chunyuyisheng.com/download/chunyu_clinic/latest/" class="clinicAndroidDl">Android</a></li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+            </div>
+            <div class="right">
+                <div class="formBox">
+                    <span class="texture"><img src="picture/regformtexture_1.png" alt=""/></span>
+                    <form action="/clinic/login" data-ajax="false" method="post" id="regForm">
+                    	
+                    	<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='cb54ba7d875a368f20816e731f7c32c2' /></div>
+                       <label class="formLabel">手机号</label>
+                       <p><input id="id_username" type="text" name="username" maxlength="100" /></p>
+                       <label class="formLabel">密码</label>
+                       <p><input type="password" name="password" id="id_password" /></p>
+                       <input type="hidden" name="next" value="/ask/clinic" />
+                       <p style="margin:6px 0 8px;"><a href="/accounts/forget/?frm=web">忘记密码？</a></p>
+                       <input id="loginBtn" class="btn btn-large btn-primary" type="submit" value="登 录"/>
+                    </form>
+                    <span class="divider"><img src="picture/divider_1.jpg" alt=""/></span>
+                    <p id="regEntry" style="text-align:center; margin-top:10px;">
+                    	<a href="/clinic/register" id="regBtnLink" class="btn btn-large btn-register">注 册</a>
+                    </p>
+                    <p style="text-align:center; color:#666666;margin-top:8px;">申请成为春雨医生</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+        <div class="push"></div>
+	</div>
+
+	
+  	    <div id="footer">
+	<div id="footerCnt" class="container">
+		<ul id="footerLinks" class="left">
+			<li><a href="/joinus#aboutCY">关于我们</a></li>
+			<li><a href="/joinus#position">加入我们</a></li>
+			<!--<li><a href="/clinic/regulation">诊所规则</a></li>-->
+			<li class="last"><a href="/agreement">服务协议</a></li>
+		</ul>
+		<div id="copyInfo" class="right">
+			<p id="copyright">
+Copyright &copy; 2011-2017 春雨移动健康 All Rights Reserved</p>
+			<p id="certification">京ICP备12050281号-1</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+    
+
+    <!--错误收集JS-->
+    <script>
+    window.__ = window.__||{};
+</script>
+<script>
+    var is_online_webserver = true;
+    is_online_webserver = true;
+</script>
+<script src="js/jsnlog.all.min_1.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.8.1.min_1.js" onload="load('js请求')"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.min_1.js"></script>
+
+  	<!--[if lte IE 6]>
+	    <script type="text/javascript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+    var arVersion = navigator.appVersion.split("MSIE")
+    var version = parseFloat(arVersion[1])
+    if ((version >= 5.5) && (document.body.filters))
+    {
+       for(var j=0; j<document.images.length; j++)
+       {
+          var img = document.images[j]
+          var imgName = img.src.toUpperCase()
+          if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+          {
+             var imgID = (img.id) ? "id='" + img.id + "' " : ""
+             var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+             var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+             var imgStyle = "display:inline-block;" + img.style.cssText
+             if (img.align == "left") imgStyle = "float:left;" + imgStyle
+             if (img.align == "right") imgStyle = "float:right;" + imgStyle
+             if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+             var strNewHTML = "<span " + imgID + imgClass + imgTitle
+             + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+             + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+             + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+             img.outerHTML = strNewHTML
+             j = j-1
+          }
+       }
+    }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+	    <script type="text/javascript" src="js/ie6.min_1.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/bootstrap_1.js"></script>
+	<script type="text/javascript" src="js/clinic_1.js"></script>
+
+	
+	
+
+	<script type="text/javascript">
+(function(doc) {
+	var addEvent = 'addEventListener',
+	type = 'gesturestart',
+	qsa = 'querySelectorAll',
+	scales = [1, 1],
+	meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+	
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+	
+}(document));
+</script>
+    <script type="text/javascript">
+        //下载功能
+        $(function () {
+            var $downloadBtn = $("#app_download"),
+                $downloadApp = $(".download-app"),
+                $overlay = $(".overlay");
+            var width = $downloadApp.width();
+            var height = $downloadApp.height();
+
+            if ( width && width > 0 ) {
+                $(".download-app-win").css("left","-" + width/2 + "px");
+            }
+            if ( height && height > 0 ) {
+                $(".download-app-win").css("top","-" + height/2 + "px");
+            }
+            $downloadBtn.bind("click", function () {
+                $downloadApp.fadeIn();
+                $overlay.show();
+            });
+            $overlay.bind("click", function () {
+                $downloadApp.fadeOut();
+                $overlay.hide();
+            })
+            $downloadApp.find(".bt-close").bind("click", function () {
+                $downloadApp.fadeOut();
+                $overlay.hide();
+            });
+        });
+    </script>
+	<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd507a268e3b6f794e9c7ffb9df357c28' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+
+
+</html>

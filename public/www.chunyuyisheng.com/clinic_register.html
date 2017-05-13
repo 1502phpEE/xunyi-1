@@ -1,0 +1,506 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- 时间统计 -->
+    <script type="text/javascript">
+    var performanceData = {};
+    performanceData.responseSuccessTime = new Date().getTime();
+
+    //添加domReady事件
+    if(document.addEventListener){
+        document.addEventListener("DOMContentLoaded",load("!IE-domReady"),false);
+    }else {
+        //ie浏览器检测doScroll方法是否可用来确定domReady时间
+        (function domReady () {
+            try{
+                document.documentElement.doScroll("left");
+                load("IE-domReady");
+            }catch(ex){
+                setTimeout(domReady,16);
+            }
+        })();
+    }
+
+    //时间记录fn
+    function load(str)
+    {
+        var requestTime = performanceData.responseSuccessTime;
+        performanceData[str] = new Date().getTime() - requestTime;
+    }
+
+    window.onload = load ("windowOnload_JS");
+</script>
+    <meta name="description" content="春雨手机诊所是专门为医生开发的手机应用，医生利用它对用户进行医疗咨询、随诊管理等工作，而用户来自春雨掌上医生" />
+    <meta name="keywords" content="春雨掌上医生,春雨手机诊所,健康,医疗,移动" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>
+        
+    春雨诊所 - 注册春雨医生
+
+    </title>
+
+<link rel="shortcut icon" href="https://dn-chunyu.qbox.me/@/static/favicon.ico"/>
+
+    <link rel="stylesheet" href="css/bootstrap-responsive.min_5.css" onload="load('开始渲染(白屏时间)')"/>
+    <link rel="stylesheet" href="css/bootstrap.min_5.css" />
+    <link rel="stylesheet" href="css/normalize_5.css" />
+    <link rel="stylesheet" href="css/clinic_1.css" />
+    <link rel="stylesheet" href="css/from_website_3.css"/>
+
+    <!--[if IE 6]>
+        <link href="css/ie6.min_3.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/from_website-ie_1.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/clinic-ie_1.css" />
+    <![endif]-->
+
+    
+    <style type="text/css" media="screen">
+        body {
+            background-color: #f2f2ed;
+        }
+    </style>
+    <link rel="stylesheet" href="css/sms_send_3.css"/>
+
+
+    <link rel="stylesheet" href="css/mediaelementplayer_3.css" onload="load('样式加载完毕')"/>
+    <script>
+        
+            window.is_online_webserver = true;
+        
+
+        if(window.is_online_webserver){
+            var targetProtocol = "https:";
+            if (window.location.protocol != targetProtocol){
+                window.location.href = targetProtocol + window.location.href.substring(window.location.protocol.length);
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="authed" onload="load('windowOnload_HTML')">
+
+    
+        <div class="download-app">
+    <div class="download-app-win">
+        <div class="header"><span class="bt-close"></span></div>
+        <div class="content">
+        <ul class="ly-lst ly-lst-dl">
+            <li class="ly-lst-item">
+                <a href="http://itunes.apple.com/us/app/chun-yu-yi-sheng-duan/id531372360?mt=8" target="_blank" class="ly-dl-iphone"></a>
+                <h5 class="ly-txt-h7">iPhone下载</h5>
+            </li>
+            <li class="ly-lst-item">
+                <a href="http://api.chunyuyisheng.com/download/chunyu_clinic/latest/" class="ly-dl-android"></a>
+                <h5 class="ly-txt-h7">Android下载</h5>
+            </li>
+            <li class="ly-lst-item">
+                <a href="#" class="ly-dl-qr">
+                    <img src="picture/clinic_qr_1.png" />
+                </a>
+                <h5 class="ly-txt-h5">扫描二维码</h5>
+            </li>
+        </ul>
+        </div>
+    </div> 
+</div>
+<div class="overlay"></div>
+
+    
+
+	<div class="wrapper" onload="load('wrapperOnload_HTML')">
+
+        
+            <div id="header">
+	<div id="headNav" class="container">
+		<a href="/ask/clinic" class="clinicNavLogo navSprite left">春雨诊所
+			<span class="logo"></span>
+		</a>
+		
+		<a href="/ask/clinic" class="left leftNavLink ">首页</a>
+		<a id="app_download" class="left leftNavLink ">下载</a>
+		<a href="/" class="left leftNavLink">大众版</a>
+		<a href="/clinic/register" class="right rightNavLink">医生注册</a>
+		<span class="navSplit right">&#124;</span>
+		<a href="/ask/clinic" class="right rightNavLink">医生登录</a>
+		
+	</div>
+</div>
+        
+
+        
+        
+
+        
+    <div id="content">
+        
+            <div id="docInvitePanel">
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container-000000">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+
+                <div id="docInviteBanner" style="display:block;"></div>
+                <div id="docInviteIntro">
+                    <h2>我们邀请您加入春雨医生</h2>
+
+                    <p>因为有您的加入，更多的患者得到了健康的保障</p>
+
+                    <p>同时也迈出了您自由执业的第一步。</p>
+                </div>
+
+            </div>
+
+            <!--
+            撤销下面的广告,
+            恢复滚动广告,请将上面的 swiper-container-000000 改成 swiper-container
+             -->
+            <!--
+            <div class="swiper-slide">
+                <img style="width:100%" src="picture/98bed78f7839_w956_h430__1.jpg">
+            </div>
+            -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+</div>
+
+
+
+        
+        <div id="activeIt">
+            <div class="thinContainer">
+                <div id="regMain" class="left">
+                    <div class="activeBox">
+                        <div class="clear"></div>
+                        <h1>请填写您的注册信息</h1>
+                        
+                        <form id="activeForm" class="form-horizontal" action="/clinic/do_register" onsubmit="return check_data();" method="post">
+                            <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='66ea108ba3804d62fd433b2379e58b13' /></div>
+                            
+                            
+                            <div class="inputsPanel">
+                                <div id="phoneGroup" class="control-group">
+                                    <label class="control-label" for="inputPhone"><em>*</em>手机号码</label>
+
+                                    <div class="controls">
+                                        <input maxlength="11" type="text" id="inputPhone" name="phone" autocomplete="off"/>
+                                        <span class="help-block">手机号码即登录用户名</span>
+                                    </div>
+                                </div>
+                                <div id="verifyCodeGroup" class="control-group">
+                                    <label class="control-label" for="inputVerifyCode"><em>*</em>验证码</label>
+
+                                    <div class="controls">
+                                        <input type="text" id="inputVerifyCode" name="capture" style="width:144px;" autocomplete="off"/>&nbsp;&nbsp;
+                                        <button id="getVerifyCodeBtn" autocomplete="off" class="btn" type="button">获取验证码</button>
+                                        <span class="help-block">请输入正确的手机号，获取验证码，验证码将以短信方式发送</span>
+                                    </div>
+                                </div>
+                                <div id="pwdGroup" class="control-group">
+                                    <label class="control-label" for="inputPwd"><em>*</em>设置密码</label>
+
+                                    <div class="controls">
+                                        <input type="password" id="inputPwd" name="password1" autocomplete="off"/>
+                                        <span class="help-block">您输入的密码长度必须在6和20之间</span>
+                                    </div>
+                                </div>
+                                <div id="confirmGroup" class="control-group">
+                                    <label class="control-label" for="inputConfirmPwd"><em>*</em>确认密码</label>
+
+                                    <div class="controls">
+                                        <input type="password" id="inputConfirmPwd" name="password2" autocomplete="off"/>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="promote" value=""/>
+
+                                <div id="agreementGroup" class="control-group">
+                                    <div id="agreementCheck" class="controls">
+                                        <label class="checkbox" style="font-size: 16px;">
+                                            <input type="checkbox" style="border: medium none; width: 24px;" id="inputCheckAgreement" checked="checked">&nbsp;&nbsp;我已阅读<a
+                                                href="/clinic/agreement" target="_blank">《春雨手机诊所协议》</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="divider" style="margin:0 auto;"><img src="picture/divider2_1.jpg" alt=""/></div>
+                                </div>
+                                <div style="text-align: center; padding: 20px 0 44px;">
+                                    <input id="submit_button" class="btn btn-primary" type="submit" value="同意注册"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="regSide" class="right">
+                    <div id="sideIntro">
+                        </br></br>
+                        <h3>全新改版，海量招募医生：</h3>
+                        <ul>
+                            <li>注册送20元现金，邀请同行奖励50元！</li>
+                            <li>春雨将线上几千万患者按病种及地域有效分配、推送给您！</li>
+                            <li>您将拥有强大的个人网络诊所，自主设定擅长特色项目、自由定价！</li>
+                            <li>您将拥有自己的患者粉丝群，实现线下治疗&线上回访、线上问诊&线下导诊的有效循环；与他们长期互动，高频转化收费项目（如特约咨询、挂号及私人医生等）；更方便、有效的提高知名度及影响力！</li>
+                            <li>互联网医疗，行业破晓，现在参加，不可错过！</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="push"></div>
+	</div>
+
+	
+  	    <div id="footer">
+	<div id="footerCnt" class="container">
+		<ul id="footerLinks" class="left">
+			<li><a href="/joinus#aboutCY">关于我们</a></li>
+			<li><a href="/joinus#position">加入我们</a></li>
+			<!--<li><a href="/clinic/regulation">诊所规则</a></li>-->
+			<li class="last"><a href="/agreement">服务协议</a></li>
+		</ul>
+		<div id="copyInfo" class="right">
+			<p id="copyright">
+Copyright &copy; 2011-2017 春雨移动健康 All Rights Reserved</p>
+			<p id="certification">京ICP备12050281号-1</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+    
+
+    <!--错误收集JS-->
+    <script>
+    window.__ = window.__||{};
+</script>
+<script>
+    var is_online_webserver = true;
+    is_online_webserver = true;
+</script>
+<script src="js/jsnlog.all.min_1.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.8.1.min_1.js" onload="load('js请求')"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.min_1.js"></script>
+
+  	<!--[if lte IE 6]>
+	    <script type="text/javascript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+    var arVersion = navigator.appVersion.split("MSIE")
+    var version = parseFloat(arVersion[1])
+    if ((version >= 5.5) && (document.body.filters))
+    {
+       for(var j=0; j<document.images.length; j++)
+       {
+          var img = document.images[j]
+          var imgName = img.src.toUpperCase()
+          if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+          {
+             var imgID = (img.id) ? "id='" + img.id + "' " : ""
+             var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+             var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+             var imgStyle = "display:inline-block;" + img.style.cssText
+             if (img.align == "left") imgStyle = "float:left;" + imgStyle
+             if (img.align == "right") imgStyle = "float:right;" + imgStyle
+             if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+             var strNewHTML = "<span " + imgID + imgClass + imgTitle
+             + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+             + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+             + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+             img.outerHTML = strNewHTML
+             j = j-1
+          }
+       }
+    }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+	    <script type="text/javascript" src="js/ie6.min_1.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/bootstrap_1.js"></script>
+	<script type="text/javascript" src="js/clinic_1.js"></script>
+
+	
+    <script src="js/jq4csrf_1.js"></script>
+    <script src="js/sms_send_1.js"></script>
+    <link href="css/swiper.min_1.css" rel="stylesheet">
+    <script src="js/swiper.jquery.min_1.js"></script>
+
+    <script type="text/javascript">
+
+        function check_phone_num(phone_num) {
+            var valid = true;
+            if (phone_num.length == 11) {
+                if (phone_num.charAt(0) == "1") {
+                    for (var k = 1; k < 11; k++) {
+                        if (phone_num.charAt(k) < '0' || phone_num.charAt(k) > '9') {
+                            valid = false;
+                            break;
+                        }
+                    }
+                } else {
+                    valid = false;
+                }
+            } else {
+                valid = false;
+            }
+            return valid;
+        }
+
+        function check_data() {
+            //phone
+            if (!setAlert($("#inputPhone"), $("#phoneGroup"), "请填手机号", null)) {
+                return false;
+            }
+            var inputPhone = $("#inputPhone");
+            var inputPhoneVal = $.trim(inputPhone.val());
+            if (inputPhoneVal.length > 0) {
+                if (!check_phone_num(inputPhoneVal)) {
+                    showAlert($("#inputPhone"), $("#phoneGroup"), "手机格式错误!", null);
+                    return false;
+                }
+            }
+
+            //verify code
+            if (!setAlert($("#inputVerifyCode"), $("#verifyCodeGroup"), "请填写验证码", null)) {
+                return false;
+            }
+
+            //password
+            if (!setAlert($("#inputPwd"), $("#pwdGroup"), "请填写密码", null)) {
+                return false;
+            }
+
+            //password
+            if (!setAlert($("#inputConfirmPwd"), $("#confirmGroup"), "请再次填写密码", null)) {
+                return false;
+            }
+
+            var pwd = $.trim($("#inputPwd").val());
+            var confirmPwd = $.trim($("#inputConfirmPwd").val());
+
+            if (pwd.length < 6 || pwd.length > 20) {
+                showAlert($("#inputPwd"), $("#pwdGroup"), "请输入6~20个字的密码，不可以有空格", null);
+                return false;
+            }
+
+            if (pwd.length > 0 && confirmPwd.length > 0 && pwd != confirmPwd) {
+                showAlert($("#inputConfirmPwd"), $("#confirmGroup"), "两次输入的密码不一致!", null);
+                return false;
+            }
+
+            if (!$("#activeForm input:checkbox").is(':checked')) {
+                showAlert($("#inputCheckAgreement"), $("#agreementGroup"), "请仔细阅读《春雨诊所协议》", null);
+                return false;
+            }
+
+            return true;
+        }
+
+
+
+
+
+    </script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            //direction: 'vertical',
+            loop: true,
+            autoplay:5000,
+
+            // If we need pagination
+            pagination: '.swiper-pagination',
+            slideToClickedSlide:true,
+            paginationClickable:true,
+            autoHeight:true,
+            autoplayDisableOnInteraction:false
+
+            // Navigation arrows
+            //nextButton: '.swiper-button-next',
+            //prevButton: '.swiper-button-prev',
+
+            // And if we need scrollbar
+            //scrollbar: '.swiper-scrollbar',
+        })
+    </script>
+
+
+
+	<script type="text/javascript">
+(function(doc) {
+	var addEvent = 'addEventListener',
+	type = 'gesturestart',
+	qsa = 'querySelectorAll',
+	scales = [1, 1],
+	meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+	
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+	
+}(document));
+</script>
+    <script type="text/javascript">
+        //下载功能
+        $(function () {
+            var $downloadBtn = $("#app_download"),
+                $downloadApp = $(".download-app"),
+                $overlay = $(".overlay");
+            var width = $downloadApp.width();
+            var height = $downloadApp.height();
+
+            if ( width && width > 0 ) {
+                $(".download-app-win").css("left","-" + width/2 + "px");
+            }
+            if ( height && height > 0 ) {
+                $(".download-app-win").css("top","-" + height/2 + "px");
+            }
+            $downloadBtn.bind("click", function () {
+                $downloadApp.fadeIn();
+                $overlay.show();
+            });
+            $overlay.bind("click", function () {
+                $downloadApp.fadeOut();
+                $overlay.hide();
+            })
+            $downloadApp.find(".bt-close").bind("click", function () {
+                $downloadApp.fadeOut();
+                $overlay.hide();
+            });
+        });
+    </script>
+	<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd507a268e3b6f794e9c7ffb9df357c28' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+
+
+</html>

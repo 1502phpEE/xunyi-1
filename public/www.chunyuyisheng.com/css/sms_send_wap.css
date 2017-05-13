@@ -1,0 +1,68 @@
+﻿        #registerVerify.sms-pending {
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        #getImgVerifyDialog {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 100;
+            padding: 50px 10px 0;
+            display: none;
+        }
+
+        #getImgVerifyDialog .verify-dialog-main {
+            background-color: white;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #captchaInputs {
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #captchaInputs .captcha {
+            cursor: pointer;
+            display: inline-block;
+            height: 30px;
+            margin-top: -6px;
+            vertical-align: middle;
+        }
+
+        #captchaInputs input {
+            border: 1px solid #ddd;
+            display: inline-block;
+            font-size: 18px;
+            height: 25px;
+            padding: 5px;
+            width: 80px;
+        }
+
+        #captchaHelper {
+            color: #888;
+            font-size: 12px;
+        }
+
+        #verify-dialog-close-btn {
+            float: right;
+            font-size: 20px;
+            margin-top: -10px;
+            cursor: pointer;
+        }
+
+        #captchaSendSubmit {
+            background-color: #51d367;
+            border: 1px solid #35c24d;
+            border-radius: 3px;
+            color: #ffffff;
+            padding: 5px 8px;
+            font-size: 16px;
+        }

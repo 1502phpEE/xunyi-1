@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="妇科全国的医生信息">
+
+    
+	<meta name="keywords" content="医生、妇科、全国、按科室找医生" />
+
+
+    <title>妇科全国医生列表-春雨医生</title>
+
+    
+    <link rel="shortcut icon" href="http://media2.chunyuyisheng.com/@/static/favicon.ico"/>
+    
+
+    <!--fis编译该 html 后自动引入的 css 放置位置-->
+        
+
+    
+	    <link rel="stylesheet" href="css/base_aio_05ae397_1.css" />
+
+    
+    <link rel="stylesheet" type="text/css" href="css/clinic_doctor_3de04a2_1.css" />
+
+    
+    <script type="text/javascript" src="js/tingyun_00f951b_1.js"></script>
+    
+
+    <!--项目公共head js放置区域-->
+</head>
+<body>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie_pollify_fd50e64_1.css"/>
+	<![endif]-->
+	 <div class="header-top-wrap">
+	<div class="ui-grid header-top">
+		<ul class="quick-menu">
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">用户端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/cyapp@2x_647fc8c_1.png" alt="春雨医生二维码">
+					<div class="content">
+						<span class="tit">春雨医生App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨医生App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">医生端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/ysd@2x_fe06db9_1.png" alt="春雨诊所二维码">
+					<div class="content">
+						<span class="tit">春雨诊所App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨诊所App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown weixin-dropdown">
+				<a href="javascript:void(0)">微信公众号</a>
+				<div class="qr-code-wrap">
+					<div class="qr-item">
+						<img src="picture/fwh@2x_f508d46_1.png" alt="微信公众号二维码">
+						<div class="content">
+							<span class="tit">微信公众号</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">关注春雨医生公众号</span>
+						</div>
+					</div>
+					<div class="qr-item qr-item-last">
+						<img src="picture/xcx@2x_5af9b32_1.png" alt="春雨医生小程序二维码">
+						<div class="content">
+							<span class="tit">小程序 春雨医生+</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">无需下载快速问诊</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-normal"><a href="http://m.chunyuyisheng.com/" target="_blank">触屏版</a></li>
+			<li class="menu-item menu-normal last"><a href="/clinic/register/"  target="_blank">医生入口</a></li>
+		</ul>
+	</div>
+</div> 
+
+	 <div class="header-bd ui-grid clearfix"> 
+	<h1 class="logo">
+		<a href="/"><img src="picture/logo@2x_8244314_1.png" alt="春雨医生"></a>
+	</h1>
+	<div class="search-container">
+		<form action="/pc/search" autocomplete="off">
+			<input class="query" type="text" id="query" name="query" placeholder="搜医生、医院、疾病、症状、资讯" value="">
+			<button class="search-btn" type="submit"></button>
+		</form>
+	</div>
+	<div class="user-contanier">
+	
+		<a class="login－wrap user-item" href="/ssl/api/weblogin/?next=/pc/doctors/">
+			<i class="icon-login"></i>
+			<span>登录</span>
+		</a>
+		<a class="register-wrap user-item" href="/register?next=/pc/doctors/">
+			<i class="icon-register"></i>
+			<span>注册</span>
+		</a>
+	
+	</div>
+</div> 
+
+	 <ul class="nav-list ui-grid">
+	<li class="nav-item">
+		<a href="/">首页</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/diseasesdoc/">按疾病找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/hospitals/">按医院找医生</a>
+	</li>
+	<li class="nav-item cur">
+		<a href="/pc/doctors/">按科室找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/qalist/">经典问答</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/health_news/">健康资讯</a>
+	</li>
+	<li class="nav-item last">
+		<a href="/pc/disease/hot/">疾病知识库</a>
+	</li>
+</ul> 
+
+	
+<div class="ui-grid ui-main clearfix"><!--一级科室--><ul class="tab-type-one first-clinic j-tab-wrap"><li class="tab-item  cur"><a href="/pc/doctors/1-全国/">妇科</a></li><li class="tab-item "><a href="/pc/doctors/fa-全国/">儿科</a></li><li class="tab-item "><a href="/pc/doctors/aa-全国/">内科</a></li><li class="tab-item "><a href="/pc/doctors/ha-全国/">皮肤性病科</a></li><li class="tab-item "><a href="/pc/doctors/6-全国/">营养科</a></li><li class="tab-item "><a href="/pc/doctors/ca-全国/">骨伤科</a></li><li class="tab-item "><a href="/pc/doctors/8-全国/">男科</a></li><li class="tab-item "><a href="/pc/doctors/ba-全国/">外科</a></li><li class="tab-item "><a href="/pc/doctors/ma-全国/">肿瘤及防治科</a></li><li class="tab-item "><a href="/pc/doctors/oa-全国/">中医科</a></li><li class="tab-item "><a href="/pc/doctors/13-全国/">口腔颌面科</a></li><li class="tab-item "><a href="/pc/doctors/ja-全国/">耳鼻咽喉科</a></li><li class="tab-item "><a href="/pc/doctors/15-全国/">眼科</a></li><li class="tab-item "><a href="/pc/doctors/16-全国/">整形美容科</a></li><li class="tab-item "><a href="/pc/doctors/na-全国/">精神心理科</a></li><li class="tab-item "><a href="/pc/doctors/21-全国/">产科</a></li><li class="tab-item "><a href="/pc/doctors/qa-全国/">报告解读科</a></li></ul><!--二级科室--><div class="sider-wrap dropdown-wrap"><ul class="tab-type-one tab-type-free slider-item  cur"><li class="tab-item  cur"><a href="/pc/doctors/1-全国/">
+						妇科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/fa-全国/">
+						小儿科
+					</a></li><li class="tab-item "><a href="/pc/doctors/fb-全国/">
+						新生儿科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/aa-全国/">
+						呼吸内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ab-全国/">
+						心血管内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ac-全国/">
+						神经内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ad-全国/">
+						消化内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ae-全国/">
+						肾内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/af-全国/">
+						内分泌与代谢科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ag-全国/">
+						风湿免疫科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ah-全国/">
+						血液病科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ai-全国/">
+						感染科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/ha-全国/">
+						皮肤科
+					</a></li><li class="tab-item "><a href="/pc/doctors/hb-全国/">
+						性病科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/6-全国/">
+						营养科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/ca-全国/">
+						脊柱科
+					</a></li><li class="tab-item "><a href="/pc/doctors/cb-全国/">
+						关节科
+					</a></li><li class="tab-item "><a href="/pc/doctors/cc-全国/">
+						创伤科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/8-全国/">
+						男科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/ba-全国/">
+						胸外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bb-全国/">
+						心脏与血管外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bc-全国/">
+						神经外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bd-全国/">
+						肝胆外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/be-全国/">
+						烧伤科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bf-全国/">
+						康复科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bg-全国/">
+						泌尿外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bh-全国/">
+						肛肠科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bi-全国/">
+						普外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/bj-全国/">
+						甲状腺乳腺外科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/ma-全国/">
+						肿瘤内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/mb-全国/">
+						肿瘤外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/mc-全国/">
+						介入与放疗中心
+					</a></li><li class="tab-item "><a href="/pc/doctors/md-全国/">
+						肿瘤中医科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/oa-全国/">
+						中医内科
+					</a></li><li class="tab-item "><a href="/pc/doctors/ob-全国/">
+						中医外科
+					</a></li><li class="tab-item "><a href="/pc/doctors/oc-全国/">
+						中医妇科
+					</a></li><li class="tab-item "><a href="/pc/doctors/od-全国/">
+						中医男科
+					</a></li><li class="tab-item "><a href="/pc/doctors/oe-全国/">
+						中医儿科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/13-全国/">
+						口腔颌面科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/ja-全国/">
+						耳科
+					</a></li><li class="tab-item "><a href="/pc/doctors/jb-全国/">
+						鼻科
+					</a></li><li class="tab-item "><a href="/pc/doctors/jc-全国/">
+						咽喉科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/15-全国/">
+						眼科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/16-全国/">
+						整形美容科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/na-全国/">
+						精神科
+					</a></li><li class="tab-item "><a href="/pc/doctors/nb-全国/">
+						心理科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/21-全国/">
+						产科
+					</a></li></ul><ul class="tab-type-one tab-type-free slider-item "><li class="tab-item "><a href="/pc/doctors/qa-全国/">
+						检验科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qb-全国/">
+						放射科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qc-全国/">
+						内镜科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qd-全国/">
+						病理科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qe-全国/">
+						心电图科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qf-全国/">
+						超声科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qg-全国/">
+						麻醉科
+					</a></li><li class="tab-item "><a href="/pc/doctors/qh-全国/">
+						体检中心
+					</a></li><li class="tab-item "><a href="/pc/doctors/qi-全国/">
+						预防保健科
+					</a></li></ul></div><!--城市筛选项--><div class="select-wrap"><label class="title">选择地区：</label><select name="" class="city-select" onchange="window.location=this.value"><option value="/pc/doctors/1-全国/"  selected="selected" >
+					全国
+				</option><option value="/pc/doctors/1-北京/" >
+					北京
+				</option><option value="/pc/doctors/1-天津/" >
+					天津
+				</option><option value="/pc/doctors/1-重庆/" >
+					重庆
+				</option><option value="/pc/doctors/1-上海/" >
+					上海
+				</option><option value="/pc/doctors/1-河北/" >
+					河北
+				</option><option value="/pc/doctors/1-山西/" >
+					山西
+				</option><option value="/pc/doctors/1-辽宁/" >
+					辽宁
+				</option><option value="/pc/doctors/1-吉林/" >
+					吉林
+				</option><option value="/pc/doctors/1-黑龙江/" >
+					黑龙江
+				</option><option value="/pc/doctors/1-江苏/" >
+					江苏
+				</option><option value="/pc/doctors/1-浙江/" >
+					浙江
+				</option><option value="/pc/doctors/1-安徽/" >
+					安徽
+				</option><option value="/pc/doctors/1-福建/" >
+					福建
+				</option><option value="/pc/doctors/1-江西/" >
+					江西
+				</option><option value="/pc/doctors/1-山东/" >
+					山东
+				</option><option value="/pc/doctors/1-河南/" >
+					河南
+				</option><option value="/pc/doctors/1-湖北/" >
+					湖北
+				</option><option value="/pc/doctors/1-湖南/" >
+					湖南
+				</option><option value="/pc/doctors/1-广东/" >
+					广东
+				</option><option value="/pc/doctors/1-海南/" >
+					海南
+				</option><option value="/pc/doctors/1-四川/" >
+					四川
+				</option><option value="/pc/doctors/1-贵州/" >
+					贵州
+				</option><option value="/pc/doctors/1-云南/" >
+					云南
+				</option><option value="/pc/doctors/1-陕西/" >
+					陕西
+				</option><option value="/pc/doctors/1-甘肃/" >
+					甘肃
+				</option><option value="/pc/doctors/1-青海/" >
+					青海
+				</option><option value="/pc/doctors/1-台湾/" >
+					台湾
+				</option><option value="/pc/doctors/1-内蒙古/" >
+					内蒙古
+				</option><option value="/pc/doctors/1-广西/" >
+					广西
+				</option><option value="/pc/doctors/1-宁夏/" >
+					宁夏
+				</option><option value="/pc/doctors/1-新疆/" >
+					新疆
+				</option><option value="/pc/doctors/1-西藏/" >
+					西藏
+				</option></select></div><!--筛选结果--><div class="select-wrap chosen"><label class="title">已选择:</label><ul id="chosen-list"><li>妇科</li></ul><label class="available-switch"><input type="checkbox" name="" value="">仅显示可咨询医生</label></div><!--医生列表--><h3 class="clinci-title">全国妇科医生列表</h3><div class="doctor-list"><div class="doctor-info-item  first"><div class="avatar-wrap"><img src="picture/09d0b1480799_w565_h565__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_133b749078c3e9cb/" target="_blank"><span class="name">万彪&nbsp;</span><span class="clinic"></span><span class="grade">医师</span></a><p class="hospital"> 重庆医科大学附属第二医院 </p><p class="des">擅长：不孕不育、月经不调、人工流产、阴道炎、宫颈糜烂、盆腔炎</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/43345ccb1f41_1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/6824f9074b433fae/" target="_blank"><span class="name">张淞文&nbsp;</span><span class="clinic"></span><span class="grade">主任医师</span></a><p class="hospital"> 北京妇产医院 </p><p class="des">擅长：阴道炎、盆腔炎、流产、不孕症、月经不调、更年期功能性子宫出血</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/5a50232ba424_w552_h549__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_67314986ea344dfc/" target="_blank"><span class="name">杨新华&nbsp;</span><span class="clinic"></span><span class="grade">副主任医师</span></a><p class="hospital"> 上海市第一妇婴保健院 </p><p class="des">擅长：子宫肌瘤、子宫腺肌病、妇科肿瘤、不孕不育、宫颈疾病、阴道炎</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/80122d765e06_w504_h504__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_9b639114f380ba19/" target="_blank"><span class="name">谢秀琴&nbsp;</span><span class="clinic"></span><span class="grade">副主任医师</span></a><p class="hospital"> 浙江大学医学院附属妇产科医院（浙江省妇女保健院、浙江省妇女医院） </p><p class="des">擅长：子宫出血、多囊卵巢综合征、外阴白斑、流产、妇科炎症、真菌性阴道炎</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/b0d602af9aaf_w400_h400__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_956bb362c5d74e8f/" target="_blank"><span class="name">苏莉&nbsp;</span><span class="clinic"></span><span class="grade">副主任医师</span></a><p class="hospital"> 北京妇产医院 </p><p class="des">擅长：月经不调、阴道出血、良性肿瘤、恶性肿瘤、宫颈癌、子宫内膜癌</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/265894b64abd_w569_h569__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_87cf6364c3b428dd/" target="_blank"><span class="name">王苏梅&nbsp;</span><span class="clinic"></span><span class="grade">主任医师</span></a><p class="hospital"> 山东省计划生育科学技术研究所 </p><p class="des">擅长：不孕不育、多囊卵巢综合症、月经不调、逆行射精、无精症、不孕</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/06bfaa2882eb_w445_h445__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_fuke_liuyong/" target="_blank"><span class="name">刘勇&nbsp;</span><span class="clinic"></span><span class="grade">主治医师</span></a><p class="hospital"> 北京妇产医院 </p><p class="des">擅长：妊娠、子宫肌瘤、卵巢肿瘤、子宫内膜异位症、子宫腺肌病、不孕不育</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/49e1f9087daf_w2098_h2098__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_0946fd382100bc3c/" target="_blank"><span class="name">马小妹&nbsp;</span><span class="clinic"></span><span class="grade">医师</span></a><p class="hospital"> 张家川县龙山镇中心卫生院 </p><p class="des">擅长：人流、引产、先兆流产、不孕不育</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/f09019b002e9_w921_h921__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_1bc7a66f4bf2e412/" target="_blank"><span class="name">潘宁宁&nbsp;</span><span class="clinic"></span><span class="grade">医师</span></a><p class="hospital"> 北京大学第三医院 </p><p class="des">擅长：月经不调、阴道炎、盆腔炎、先兆流产、绝经、妊娠</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/0f57f708578f_w190_h182__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_3987dd6cf0e26032/" target="_blank"><span class="name">周桂菊&nbsp;</span><span class="clinic"></span><span class="grade">副主任医师</span></a><p class="hospital"> 合肥市第一人民医院/安徽医科大学第三附属学院 </p><p class="des">擅长：妇科肿瘤、妇科炎症、不孕不育</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/1fdc4015e4ee_w375_h375__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_4bad6e1058a43076/" target="_blank"><span class="name">何莹莹&nbsp;</span><span class="clinic"></span><span class="grade">医师</span></a><p class="hospital"> 广州医科大学第一附属医院 </p><p class="des">擅长：先兆流产、阴道炎、子宫肌瘤、子宫腺肌症、月经失调、盆腔炎</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/a0eed5e66eef_w516_h516__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_7d5ff34c737d15c1/" target="_blank"><span class="name">王丽婷&nbsp;</span><span class="clinic"></span><span class="grade">主治医师</span></a><p class="hospital"> 武警天津总队医院 </p><p class="des">擅长：卵巢早衰、胎停、流产、宫外孕、盆腔炎</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/8f897292f6c4_w368_h368__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_84c28f8378d8221d/" target="_blank"><span class="name">孙晶&nbsp;</span><span class="clinic"></span><span class="grade">主治医师</span></a><p class="hospital"> 滨州医学院附属医院 </p><p class="des">擅长：月经不调、阴道炎、妇科炎症、排卵期出血、多囊卵巢综合征、卵泡破裂</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/4884f49a9944_w528_h527__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_8719e1c9d4098d11/" target="_blank"><span class="name">王敏娜&nbsp;</span><span class="clinic"></span><span class="grade">主治医师</span></a><p class="hospital"> 抚顺市中心医院 </p><p class="des">擅长：阴道炎、腹痛、人流、排卵期出血、宫颈糜烂、子宫内膜异位症</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/82e47212830d_w576_h576__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_9a1ad7cda84c3808/" target="_blank"><span class="name">马晓丹&nbsp;</span><span class="clinic"></span><span class="grade">医师</span></a><p class="hospital"> 蚌埠市第一人民医院 </p><p class="des">擅长：阴道炎、白带异常、妊娠、月经推迟、流产、人流</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/c97b794df6e8_1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_ab5e6879f0355d86/" target="_blank"><span class="name">刘凤英&nbsp;</span><span class="clinic"></span><span class="grade">副主任医师</span></a><p class="hospital"> 北京市怀柔区第一医院 </p><p class="des">擅长：妇科肿瘤、更年期综合征、出血性疾病</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/18c289cae5b1_w169_h169__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_b40145055e45cb02/" target="_blank"><span class="name">蒋立辉&nbsp;</span><span class="clinic"></span><span class="grade">主任医师</span></a><p class="hospital"> 上海市公共卫生临床中心/复旦大学附属公共卫生临床中心 </p><p class="des">擅长：乙肝、妊娠、月经失调、不孕症、多囊卵巢综合症、痛经</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/9e929380e053_w520_h557__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_e552ae5c702023ba/" target="_blank"><span class="name">蔡斌&nbsp;</span><span class="clinic"></span><span class="grade">副主任医师</span></a><p class="hospital"> 上海市第一人民医院南院 </p><p class="des">擅长：恶性肿瘤、盆腔炎、流产</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/2b4cef7a3973_w436_h434__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_ea48072ec7c55728/" target="_blank"><span class="name">周莉娜&nbsp;</span><span class="clinic"></span><span class="grade">主治医师</span></a><p class="hospital"> 上海市第一人民医院(原:上海市红十字会医院) </p><p class="des">擅长：妇科病、习惯性流产、不孕不育、子宫肌瘤、卵巢囊肿、月经失调</p></div></div><div class="doctor-info-item  "><div class="avatar-wrap"><img src="picture/98ee9dc3e4a4_w459_h459__1.jpg"><span class="available">可咨询</span></div><div class="detail"><a class="name-wrap" href="/pc/doctor/clinic_web_f5714eaaece22f45/" target="_blank"><span class="name">谢文霞&nbsp;</span><span class="clinic"></span><span class="grade">主治医师</span></a><p class="hospital"> 北京市大兴区妇幼保健院 </p><p class="des">擅长：妇科炎症、妇科肿瘤、宫颈疾病、流产</p></div></div></div><!--分页器--><div class="pagebar"><a class="prev disabled" href="javascript:void(0)">上一页</a><a  class="page" href="javascript:void(0)">1</a><a class="next" href="/pc/doctors/1-全国/?page=2">下一页</a></div></div>
+
+
+	 
+<div class="ly-ft footer" id="footer">
+    <div class="inner">
+        <div class="ly-lst-contacts">
+            <a class="ly-contacts" target="_blank" href="/cooperation/open_api/">开放平台</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#aboutCY">关于春雨</a>
+            <a class="ly-contacts" target="_blank" href="/api/news/chunyu/list/">公司动态</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#position">加入春雨</a>
+            <a class="ly-contacts" target="_blank" href="/contact">联系我们</a>
+            <a class="ly-contacts" target="_blank" href="/pedometer">春雨计步器</a>
+        </div>
+        <div class="ly-copyright">
+                <p>
+                    Copyright &copy; 2011-2017
+                    <a href="http://www.chunyuyisheng.com/">北京春雨天下软件有限公司</a> 
+                    All Rights Reserved
+                </p>
+            <p>京ICP证120150号&nbsp; 京ICP备12050281号-1&nbsp; 京卫网审[2014]第0335号</p>
+        </div>
+        <div class="footer-copyright">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020212">
+                <img src="picture/bede9876c388_w20_h20__1.png"/>
+                <p>京公网安备 11010802020212号</p>
+            </a>
+        </div>
+    </div>
+</div> 
+
+
+
+
+<script type="text/javascript" src="js/common_pkg_6c99336_1.js"></script>
+<script type="text/javascript">/*resourcemap*/
+</script>
+
+
+<!--[if lte IE 8]>
+	<script src="js/es5-shim.min_1.js"></script>
+	<script src="js/es5-sham.min_1.js"></script>
+<![endif]-->
+
+
+
+	<script type="text/javascript" src="js/clinic_doctor_d9ccd42_1.js"></script>
+
+ 
+	
+		<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c153f37e6f66b16b2d34688c92698e4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+	
+
+ 
+	
+		
+<script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?12035ad3ce03fc3f1c6d340c9a1ff41b":"https://jspassport.ssl.qhimg.com/11.0.1.js?12035ad3ce03fc3f1c6d340c9a1ff41b";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else{
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script> 
+	
+
+</body>
+</html>

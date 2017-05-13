@@ -1,0 +1,299 @@
+﻿#header {
+	background-image: url("../images/navbg.gif");
+}
+
+.navSprite, .sprite {
+	background-image: url("../images/sprite.gif");
+	background-repeat:no-repeat;
+}
+.sprite {
+	background-image: url("../images/sprite.gif");
+	background-repeat:no-repeat;
+}
+.colorSprite {
+	background-image: url("../images/color-sprite.gif");
+	background-repeat:no-repeat;
+}
+
+#outAskBox input[type="submit"],  #innerAskBox input[type="submit"] {
+	background-repeat:no-repeat;
+}
+
+#servIntro {
+	background-image: none;
+}
+
+.clear {
+	clear: both;
+	height: 1px;
+  	overflow: hidden;
+}
+
+.panelHeader a.moreLink, .panelHeader-em a.moreLink {
+	top: 8px;
+}
+
+#timeMetrics p a {
+	width: 72px;
+}
+#orderIFrm .form-horizontal .controls {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#myProbPanel .nav-tabs > li {
+	width: 294px !important;
+}
+
+/**
+ * bootstrap IE6 fixed	
+ * https://github.com/empowering-communities/Bootstrap-IE6.git
+ * */
+
+/* Forms */
+.button-reset {height:auto;width:auto;margin-bottom:0px}
+
+input.btn, a.btn, button.btn {height:auto;width:auto}
+.input-prepend input {margin-top:1px}
+
+/* Buttons */
+.btn {margin-left:0px;padding:2px 8px;}
+.btn:hover {opacity:.4;filter:alpha(opacity=40);background-position:0 0; color: #000000}
+
+.btn-primary:hover {
+	background-color: #4d95d7;
+}
+
+.btn-register:hover {
+	background-color: #41ab41;
+}
+
+.btn-success:hover {
+	background-color: #51A351;
+}
+
+.btn-primary:active {
+  background-color: #4d95d7 \9;
+}
+.btn-primary, .btn-register {
+	border:none;
+}
+
+.btn-register:active {
+  background-color: #41ab41 \9;
+}
+
+#contentNav ul li {
+	display: inline;
+	zoom:1
+}
+
+#contentNav ul li a{
+	display: inline;
+	zoom:1
+}
+
+#contentNav .nav-tabs {
+	height: 35px;
+}
+
+#contentNav .nav-tabs {
+	background-color: #3791E6;
+  border: 1px solid #3791E6;
+}
+
+#contentNav .nav-tabs li {
+	margin-top: 4px;
+}
+
+#contentNav .nav-tabs li.active {
+	background-color: white;
+}
+
+#contentNav .nav-tabs li:hover, #contentNav .nav-tabs li:hover a {
+	background-color: transparent;
+	color: white;
+}
+
+#contentNav .nav-tabs li.active:hover, #contentNav .nav-tabs li.active:hover a {
+	background-color: white;
+	color: black;
+}
+
+#contentNav .nav-tabs li a {
+	border:none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 32px;
+}
+
+#contentNav .nav-pills li a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 26px;
+}
+
+#contentNav  .nav-pills  li.active  a {
+	background-color: #3791e6;
+	color: white;
+}
+
+#contentNav > .nav-pills, .breadcrumb {
+	height: 34px;
+	padding-bottom: 0px;
+}
+
+.breadcrumb li{
+	background-color: transparent;
+}
+
+.msgFrom {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.actions a {
+	padding-left: 8px;
+}
+
+.bubbleArrow {
+	display:none;
+}
+
+#loginBtn {
+	padding:8px;
+}
+#regBtnLink {
+	width: 226px;
+	padding:8px;
+}
+
+#content {
+	min-height:800px;
+	height:auto !important;
+	height:800px;
+	
+	overflow:visible;
+}
+
+.btn-success:hover{
+	background-color:#5BB75B;
+}
+
+#activeForm input[type="submit"] {
+	padding:8px;
+}
+
+#activeForm input[type="submit"]:hover{
+	background-color: #4D95D7;
+}
+
+.popover .arrow{display:none;}
+
+.entryInfo {
+	width: 150px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#problemMain {
+	padding-left: 4px;
+	width: 714px;
+}
+
+.problemsNum {
+	border:none;
+}
+
+.tab-pane {
+	height: 280px;
+}
+
+.tab-content .active {
+	display:block;
+}
+
+.checkbox input[type="checkbox"] {
+	float: none;
+	zoom:1
+}
+
+.well {
+	margin-left: 4px;
+}
+.nav-list {
+	width: 76px;
+}
+
+.nav-list li.active {
+	background-color: #F5F5F5;
+}
+
+.nav-list li.active a {
+	background-color:#0088CC; 
+	color: white;
+}
+
+#tagsList input {
+	width: 14px;
+}
+
+#regForm .btn-primary {
+	padding:0px;
+	width: 235px;
+	line-height: 44px;
+	font-size: 24px;
+	height: 55px !important;
+}
+
+#regEntry a.btn-register {
+ 	padding:0px;
+	width: 235px;
+	line-height: 44px;
+	font-size: 24px;
+	height: 55px !important;
+}
+
+#agreementCheck {
+	padding-left: 0px;
+	margin-left: 160px;
+}
+
+.activeBox .btn-primary {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 32px;
+	padding-right: 32px;
+	line-height: 28px;
+	font-size: 20px;
+}
+
+#sideAccount p a , #sideAccount input[type="submit"]{
+	width: 200px !important;
+	height: 44px !important;
+}
+#sideAccount p a {
+	padding: 2px 0px;
+	line-height: 40px;
+}
+
+.btn-group > .btn + .dropdown-toggle {
+  *padding-top: 3px;
+  padding-right: 8px;
+  *padding-bottom: 3px;
+  padding-left: 8px;
+}
+
+ul#otherLinks li.linksColumn {
+	width: 318px;
+	float: left;
+}
+
+#rechargeSelector select {
+	width: 140px;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+#new_ehr_link {
+	margin-top: 4px;
+}

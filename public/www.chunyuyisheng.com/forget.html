@@ -1,0 +1,370 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="description" content="春雨医生，中国最专业的在线医疗健康咨询服务。由三甲医院专家医师解答用户的健康问题；移动客户端产品春雨掌上医生是一款“自查+问诊”的健康诊疗类手机客户端; 您可通过春雨医生、春雨掌上医生, 查询自己或他人有可能罹患的疾病, 免费向专业医生提问，同时您将得到最专业的解答。" />
+  <meta name="keywords" content="春雨医生,春雨掌上医生,春雨医生医生专用版,春雨手机诊所,健康,医疗,移动,在线健康咨询" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>
+  	
+    春雨诊所 - 忘记密码
+
+  </title>
+<link rel="shortcut icon" href="https://dn-chunyu.qbox.me/@/static/favicon.ico"/>
+  	<link rel="stylesheet" href="css/bootstrap-responsive.min_4.css" />
+  	<link rel="stylesheet" href="css/bootstrap.min_4.css" />
+  	<link rel="stylesheet" href="css/normalize_4.css" />
+  	<link rel="stylesheet" href="css/website_4.css" />
+  	<link rel="stylesheet" href="css/from_website_2.css" />
+  	<link rel="stylesheet" href="css/customize_bootstrap_4.css" />
+  	<!--[if !IE]>
+  	<style type="text/css" media="screen">
+  		#header {
+  			z-index: 8000;
+			position: relative;	
+  		}
+	</style>
+  	<![endif]-->
+  	<!--[if gt IE 6]>
+  	<style type="text/css" media="screen">
+  		#header {
+  			z-index: 8000;
+			position: relative;	
+  		}
+	</style>
+  	<![endif]-->
+  <!--[if IE 6]>
+  <link href="css/ie6.min_3.css" rel="stylesheet">
+	<![endif]-->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="css/website-ie_4.css" />
+  <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div id="header">
+			<div id="headNav" class="container">
+				<a href="/" class="navLogo navSprite left">春雨医生
+					<span class="logo"></span>
+				</a>
+				<a href="/" class="left leftNavLink ">首页</a>
+				<a href="/download" class="left leftNavLink ">下载</a>
+				<a href="/clinic" class="left leftNavLink">医生专用版</a>
+				<a href="/register" class="right rightNavLink">注册</a>
+				<span class="navSplit right">&#124;</span>
+				<a href="/login" class="right rightNavLink">登录</a>
+			</div>
+		</div>
+		
+		
+    <div id="mainContent" class="container">
+        <div id="mainColumn" class="left">
+            <div id="authPanel">
+                <div class="pageHeader">
+                    <h1>忘记密码</h1>
+                </div>
+                
+                <div class="activeBox">
+                    <form id="activeForm" class="form-horizontal" action="/accounts/forget/" onsubmit="return check_data()" method="post"
+                          enctype="multipart/form-data">
+                        <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='d8d32fa567c2b6847686bba7c39bb7f3' /></div>
+                        <div id="phoneGroup" class="control-group">
+                            <label class="control-label" for="inputPhone"><em>*</em>登录手机号</label>
+
+                            <div class="controls">
+                                <input type="text" id="inputPhone" name="username"/>
+                            </div>
+                            <input type="hidden" name="frm" value="web"/>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"><em>*</em>验证码</label>
+
+                            <div class="controls ">
+                                <div id="captchaInputs"></div>
+                                <div id="captchaHelper"> 点击图片刷新</div>
+                            </div>
+
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls submit">
+                                <input class="btn btn-large btn-primary" id="btnSubmitForgetPwd" type="submit" value="申请密码重置"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="sideColumn" class="right">
+        </div>
+        <div class="clear"></div>
+    </div>
+
+		<div class="push"></div>
+	</div>
+	
+  	<div id="footer">
+		<div id="footerCnt" class="container">
+			<ul id="footerLinks" class="left">
+				<li><a href="/about">关于我们</a></li>
+				<li><a href="/joinus">加入我们</a></li>
+				<li class="last"><a href="/agreement">服务协议</a></li>
+			</ul>
+			<div id="copyInfo" class="right">
+				<p id="copyright">Copyright &copy; 2011-2013 chunyuyisheng.com All Rights Reserved</p>
+				<p id="certification">京ICP备12050281号-1</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+  <!--[if lte IE 6]>
+	<script type="text/javascript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+    var arVersion = navigator.appVersion.split("MSIE")
+    var version = parseFloat(arVersion[1])
+    if ((version >= 5.5) && (document.body.filters))
+    {
+       for(var j=0; j<document.images.length; j++)
+       {
+          var img = document.images[j]
+          var imgName = img.src.toUpperCase()
+          if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+          {
+             var imgID = (img.id) ? "id='" + img.id + "' " : ""
+             var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+             var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+             var imgStyle = "display:inline-block;" + img.style.cssText
+             if (img.align == "left") imgStyle = "float:left;" + imgStyle
+             if (img.align == "right") imgStyle = "float:right;" + imgStyle
+             if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+             var strNewHTML = "<span " + imgID + imgClass + imgTitle
+             + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+             + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+             + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+             img.outerHTML = strNewHTML
+             j = j-1
+          }
+       }
+    }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+	<![endif]-->
+    <script>
+    window.__ = window.__||{};
+</script>
+<script>
+    var is_online_webserver = true;
+    is_online_webserver = true;
+</script>
+<script src="js/jsnlog.all.min_1.js"></script>
+
+	<script type="text/javascript" src="js/jquery-1.8.1.min_1.js"></script>
+	<script type="text/javascript" src="js/bootstrap_1.js"></script>
+	<script type="text/javascript" src="js/ie6.min_1.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		function disableSubmit(whichButton) {
+			if (document.getElementById) {
+				// this is the way the standards work
+				document.getElementById(whichButton).disabled = true;
+			} else if (document.all) {
+				// this is the way old msie versions work
+				document.all[whichButton].disabled = true;
+			} else if (document.layers) {
+				// this is the way nn4 works
+				document.layers[whichButton].disabled = true;
+			}
+		}
+		
+		function showAlert(domObject, parentGroup, content, otherDomHub, place) {
+			if (otherDomHub == null) {
+				popHub = domObject;
+			} else {
+				popHub = otherDomHub;
+			}
+			popHub.popover({
+				content: content,
+				template: '<div class="popover"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>',
+				placement: place
+				}).popover('show');
+			parentGroup.addClass("error");
+			popHub.live("focus", function(){
+				$(this).popover('destroy');
+				parentGroup.removeClass('error');
+			});
+		}
+		
+		function closeAlert(domObject, parentGroup, otherDomHub) {
+			if (otherDomHub == null) {
+				popHub = domObject;
+			} else {
+				popHub = otherDomHub;
+			}
+			popHub.popover('destroy');
+			parentGroup.removeClass('error');
+		}
+	
+		function setAlert(domObject, parentGroup, content, otherDomHub, place) {
+			var domVal = $.trim(domObject.val());
+			if (domVal.length == 0) {
+				showAlert(domObject, parentGroup, content, otherDomHub, place);
+				return false;
+			}
+	    	return true;
+		}
+		
+		function check_phone_num(phone_num) {
+			var valid = true;
+			if (phone_num.length == 11) {
+				if (phone_num.charAt(0) == "1") {
+					for (var k = 1; k < 11; k++) {
+						if (phone_num.charAt(k) < '0' || phone_num.charAt(k) > '9') {
+							valid = false;
+							break;
+						}
+					}
+				} else {
+					valid = false;
+				}
+			} else {
+				valid = false;
+			}
+			return valid;
+		}
+	</script>
+	
+    <link rel="stylesheet" href="css/sms_send_wap_1.css"/>
+    <script src="js/jq4csrf_1.js"></script>
+    <script>
+        $('#activeForm').on('submit', function (event) {
+            event.preventDefault();
+            var url = '/accounts/forget/';
+            if (!check_data()) {
+                return;
+            }
+            var phone_num = $.trim($('#inputPhone').val());
+            var verifyForm = $(this);
+            var captcha_0 = $.trim(verifyForm.find("#id_captcha_0").val());
+            var captcha_1 = $.trim(verifyForm.find("#id_captcha_1").val());
+            //check captcha
+            if (!captcha_0 || !captcha_1) {
+                alert("请填写图片中数字结果");
+                return;
+            }
+
+            var data = {
+                "captcha_0": captcha_0,
+                "captcha_1": captcha_1,
+                "phone_num": phone_num,
+                'username': phone_num
+            };
+
+            $.ajax({
+                url: url,
+                cache: false,
+                type: 'post',
+                data: data,
+                success: function (d) {
+                    if (d.success) {
+                        window.location.href = d.url;
+                    } else {
+                        refreshNewVerifyImg();
+
+                        alert(d.error_msg);
+                    }
+                },
+                error: function () {
+                    refreshNewVerifyImg();
+
+                    alert('服务器错误，请重试');
+                }
+            })
+        });
+        $('#captchaInputs').on('click', '.captcha', function () {
+            refreshNewVerifyImg();
+        });
+        function refreshNewVerifyImg() {
+
+            $('#captchaInputs').html('获取图片中...');
+            $.ajax({
+                url: "/refresh_captcha",
+                cache: false,
+                type: "GET",
+                dataType: "json",
+                success: function (json) {
+                    if (json.result == 'success') {
+                        var $newCaptchaStr = $(json.captcha_string);
+                        $('#captchaInputs').html($newCaptchaStr);
+                        $('#captchaInputs .captcha').attr('alt', '请稍后');
+                    } else {
+                        alert("刷新失败，点击图片重试...");
+                    }
+                },
+                error: function () {
+                    alert("刷新失败，点击图片重试...");
+                }
+            });
+        }
+        refreshNewVerifyImg();
+
+    </script>
+    <script type="text/javascript">
+        function check_data() {
+            //phone
+            if (!setAlert($("#inputPhone"), $("#phoneGroup"), "请填手机号", null)) {
+                return false;
+            }
+            var inputPhone = $("#inputPhone");
+            var inputPhoneVal = $.trim(inputPhone.val());
+            if (inputPhoneVal.length > 0) {
+                if (!check_phone_num(inputPhoneVal)) {
+                    showAlert($("#inputPhone"), $("#phoneGroup"), "手机格式错误!", null);
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+
+
+	<script type="text/javascript">
+(function(doc) {
+	var addEvent = 'addEventListener',
+	type = 'gesturestart',
+	qsa = 'querySelectorAll',
+	scales = [1, 1],
+	meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+	
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+	
+}(document));
+</script>
+	<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9531af522306871c4cd9d371205d4e59' type='text/javascript'%3E%3C/script%3E"));
+</script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37744270-1']);
+  _gaq.push(['_setDomainName', 'chunyuyisheng.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

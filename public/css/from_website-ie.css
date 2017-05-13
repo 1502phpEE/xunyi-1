@@ -1,0 +1,15 @@
+﻿#header {
+	background-image: url("../images/navbg.gif");
+}
+
+#header a {
+	position: relative;
+	z-index: 9000;
+}
+
+.navSprite, .sprite {
+	background-image: url("../images/sprite.gif");
+}
+.sprite {
+	background-image: url("../images/sprite.gif");
+}

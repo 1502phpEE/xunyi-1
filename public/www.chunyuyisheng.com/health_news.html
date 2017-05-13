@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="春雨医生健康资讯频道，含健康科普类文章以及原创医学健康类视频">
+
+    
+	<meta name="keywords" content="医学健康健科普资讯，医学健康视频" />
+
+
+    <title>健康资讯-春雨医生</title>
+
+    
+    <link rel="shortcut icon" href="http://media2.chunyuyisheng.com/@/static/favicon.ico"/>
+    
+
+    <!--fis编译该 html 后自动引入的 css 放置位置-->
+        
+
+    
+	    <link rel="stylesheet" href="css/base_aio_05ae397_1.css" />
+
+    
+    <link rel="stylesheet" type="text/css" href="css/health_news_9d0ad50_1.css" />
+
+    
+    <script type="text/javascript" src="js/tingyun_00f951b_1.js"></script>
+    
+
+    <!--项目公共head js放置区域-->
+</head>
+<body>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie_pollify_fd50e64_1.css"/>
+	<![endif]-->
+	 <div class="header-top-wrap">
+	<div class="ui-grid header-top">
+		<ul class="quick-menu">
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">用户端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/cyapp@2x_647fc8c_1.png" alt="春雨医生二维码">
+					<div class="content">
+						<span class="tit">春雨医生App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨医生App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">医生端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/ysd@2x_fe06db9_1.png" alt="春雨诊所二维码">
+					<div class="content">
+						<span class="tit">春雨诊所App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨诊所App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown weixin-dropdown">
+				<a href="javascript:void(0)">微信公众号</a>
+				<div class="qr-code-wrap">
+					<div class="qr-item">
+						<img src="picture/fwh@2x_f508d46_1.png" alt="微信公众号二维码">
+						<div class="content">
+							<span class="tit">微信公众号</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">关注春雨医生公众号</span>
+						</div>
+					</div>
+					<div class="qr-item qr-item-last">
+						<img src="picture/xcx@2x_5af9b32_1.png" alt="春雨医生小程序二维码">
+						<div class="content">
+							<span class="tit">小程序 春雨医生+</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">无需下载快速问诊</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-normal"><a href="http://m.chunyuyisheng.com/" target="_blank">触屏版</a></li>
+			<li class="menu-item menu-normal last"><a href="/clinic/register/"  target="_blank">医生入口</a></li>
+		</ul>
+	</div>
+</div> 
+
+	 <div class="header-bd ui-grid clearfix"> 
+	<h1 class="logo">
+		<a href="/"><img src="picture/logo@2x_8244314_1.png" alt="春雨医生"></a>
+	</h1>
+	<div class="search-container">
+		<form action="/pc/search" autocomplete="off">
+			<input class="query" type="text" id="query" name="query" placeholder="搜医生、医院、疾病、症状、资讯" value="">
+			<button class="search-btn" type="submit"></button>
+		</form>
+	</div>
+	<div class="user-contanier">
+	
+		<a class="login－wrap user-item" href="/ssl/api/weblogin/?next=/pc/health_news/">
+			<i class="icon-login"></i>
+			<span>登录</span>
+		</a>
+		<a class="register-wrap user-item" href="/register?next=/pc/health_news/">
+			<i class="icon-register"></i>
+			<span>注册</span>
+		</a>
+	
+	</div>
+</div> 
+
+	 <ul class="nav-list ui-grid">
+	<li class="nav-item">
+		<a href="/">首页</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/diseasesdoc/">按疾病找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/hospitals/">按医院找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/doctors/">按科室找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/qalist/">经典问答</a>
+	</li>
+	<li class="nav-item cur">
+		<a href="/pc/health_news/">健康资讯</a>
+	</li>
+	<li class="nav-item last">
+		<a href="/pc/disease/hot/">疾病知识库</a>
+	</li>
+</ul> 
+
+	
+<div class="ui-grid ui-main clearfix">
+	<div class="main-wrap">
+		<!--banner-->
+		
+<div class="banner-slider-wrap j-slider">
+	<ul class="bd">
+		
+		<div class="silder-item">
+			<a href="http://www.chunyuyisheng.com/pc/video/167/?lecture_id=173" target="_blank">
+				<img src="picture/19eaad4da551_w1300_h420__1.jpg" alt="">
+			</a>
+			
+		</div>
+		
+		<div class="silder-item">
+			<a href="http://www.chunyuyisheng.com/pc/video/104/?lecture_id=161" target="_blank">
+				<img src="picture/ebdb159788b8_w1300_h420__1.jpg" alt="">
+			</a>
+			
+		</div>
+		
+		<div class="silder-item">
+			<a href="http://www.chunyuyisheng.com/pc/video/164/?lecture_id=170" target="_blank">
+				<img src="picture/c1fa2892d82f_w1300_h420__1.jpg" alt="">
+			</a>
+			
+		</div>
+		
+	</ul>
+	<div class="hd">
+		<ul></ul>
+	</div>
+	<a class="prev control-btn" href="javascript:void(0)"></a>
+	<a class="next control-btn" href="javascript:void(0)"></a>
+</div>
+
+		<!--tab-->
+		
+		<ul class="tab-type-one" id="channel">
+			
+				<li class="tab-item cur">
+					<a href="/pc/health_news/#channel">热点</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=6#channel">
+						母婴
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=35#channel">
+						男性
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=3#channel">
+						两性
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=12#channel">
+						情感
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=9#channel">
+						女性
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=15#channel">
+						减肥
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=18#channel">
+						辟谣
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=27#channel">
+						美容
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=21#channel">
+						生活
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=24#channel">
+						营养
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=30#channel">
+						癌症
+					</a>
+				</li>
+			
+				<li class="tab-item">
+					<a href="/pc/health_news/?channel_id=33#channel">
+						糖尿病
+					</a>
+				</li>
+			
+		</ul>
+		
+		<!--健康资讯-->
+		
+			
+<ul class="health-news-list">
+
+<li >
+    <a href="/pc/article/101073/" target="_blank">
+        <img src="picture/6e7619f94afa_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>日常生活中，怎样判断食物是否新鲜？</h3>
+            <p>不新鲜肉的肌肉无光泽，脂肪灰绿，外表极度干燥或黏手，指压后的凹陷不能复原，留有明显痕迹，可能有臭味。</p>
+            <span>4小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101071/" target="_blank">
+        <img src="picture/866a25833c3b_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>《外科风云》里的低温疗法真有那么神奇么？</h3>
+            <p>紧急情况下，可以给熊猫血的病人输ABO同型的普通血液。与失血而死、低温治疗这种危险疗法相比，输不同配型的血液其实安全得多。《外科风云》里的低温疗法并没有什么用。</p>
+            <span>4小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101057/" target="_blank">
+        <img src="picture/b1793f43b1eb_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>当哮喘病人发作，如何正确急救？</h3>
+            <p>当哮喘病人发作时，首先要拨打120急救电话，同时可以获得医生正确的指导。</p>
+            <span>4小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101055/" target="_blank">
+        <img src="picture/148655043894_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>糖尿病治疗的6个误区，糖友你中了几个？</h3>
+            <p>糖尿病，病情可轻可重，关键是自己如何对待该疾病。糖尿病患者只有了解糖尿病治疗的误区，才能更好地控制血糖，也才能拥有更高的生活质量。</p>
+            <span>4小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101061/" target="_blank">
+        <img src="picture/88df6a08c8e4_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>早晨vs晚上，牛奶什么时候喝更营养？丨刘萍萍专栏</h3>
+            <p>喝牛奶的时间其实是比较灵活的，关键取决于自身实际需求。它既可以放在早上喝，也可以放在晚上喝，还可以放在两餐之间，或是餐前餐后喝。</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101069/" target="_blank">
+        <img src="picture/3666a1072539_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>防灾减灾日，你需要读一读这本“小黄书”</h3>
+            <p>今天是中国第九个全国防灾减灾日，不过我知道，大部分人和我差不多，上学时没怎么接受过“防灾减灾”教育，日常更是缺少了解相关知识的渠道与机会。所以即使《东京防灾》出版多年，但对于缺少相关知识的我们依旧值得拥有。
+</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101067/" target="_blank">
+        <img src="picture/011df68e224c_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>为何有些人在压力状况下，反而表现更好？</h3>
+            <p>也许你现在觉得自己情商不够高，但是，情商的能力是可以培养的。但提高情商的最大困难在于，我们最需要情商能力的时刻，往往也是我们最没有能力进行思考、使用适当回应方式的时候。这种时刻对提升情商来说尤为重要，通过不断地在这样的情境下使用新学会的情商技能，我们才能养成新的情绪应对习惯。</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101065/" target="_blank">
+        <img src="picture/e764176cc3cd_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>打完瘦脸针秒变巴掌脸的姑娘们，肯定不会告诉你这些！</h3>
+            <p>瘦脸针的另一个名字叫肉毒素，是毒性最强的生物毒素之一。</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101063/" target="_blank">
+        <img src="picture/95414756f501_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>嗯，那个......高潮是什么感觉啊？</h3>
+            <p>xing高潮是一种逐渐升高的兴奋、紧张状态；当这种状态积累到顶点时会出现爆发；这种爆发伴随着极度愉悦的感受，同时伴随一系列的生理反应。</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101059/" target="_blank">
+        <img src="picture/db708903ba59_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>上幼儿园前，请教会宝宝说这四句话</h3>
+            <p>入园前教会宝宝说的话，其实基本上都是宝宝自己做不到的时候，向他人求助的表达。在陌生的集体环境，这些话学会后，宝宝会获得更好的社交体验，更重要的是这在培养孩子解决问题的能力。</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li >
+    <a href="/pc/article/101033/" target="_blank">
+        <img src="picture/65c37d4b3c62_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>前列腺炎，困扰男人那点事</h3>
+            <p>男同志们必须正确对待前列腺炎的问题，要学会前列腺炎的九大预防方法。</p>
+            <span>16小时前</span>
+        </div>
+    </a>
+</li>
+
+<li  class="last" >
+    <a href="/pc/article/101021/" target="_blank">
+        <img src="picture/e355b690b6da_w180_h150__1.jpg"/>
+        <div class="detail">
+            <h3>鲍鱼和鱼翅的营养价值有多高？</h3>
+            <p>与其它物质相比，鲍鱼和鱼翅的营养价值上并没有人们想象中那样高。鱼翅中还可能含有过量的甲基汞等有害物质，尽量少吃。</p>
+            <span>5月11日</span>
+        </div>
+    </a>
+</li>
+
+</ul>
+
+		
+		
+			
+				<div class="pagebar">
+	
+		<a class="prev disabled" href="javascript:void(0)">上一页</a>
+	
+	<a  class="page" href="javascript:void(0)">1</a>
+	 
+		<a class="next" href="/pc/health_news/?channel_id=0&amp;page=2#channel">下一页</a>
+	
+</div>
+			
+		
+	</div>
+	<div class="sidebar">
+		<!--视频直播-->
+		
+<div class="video-list news-info-list">
+	<div class="header">
+		<h6 class="title">视频直播</h6>
+		<a class="change-btn" href="javascript:void(0)">
+			<i class="icon-change"></i>换一批
+		</a>
+	</div>
+	<div class="video-list-wrap">
+	
+		<a class="news-info-item  first" href="/pc/video/182/?lecture_id=188" target="_blank">
+			<div class="info-pic-wrap video-type">
+				<img class="info-pic" src="picture/cafe7b0035bd_w750_h320__1.jpg">
+				
+			</div>
+			<div class="info-detail">
+				<h6 class="title">年轻时记性差，老了会痴呆吗？</h6>
+				<div class="info-footer">
+					<span class="create-time">5月9日</span>
+				</div>
+			</div>
+		</a>
+	
+		<a class="news-info-item " href="/pc/video/167/?lecture_id=173" target="_blank">
+			<div class="info-pic-wrap video-type">
+				<img class="info-pic" src="picture/71425e0859ed_w750_h320__1.jpg">
+				
+					<span class="duration"> 65:51 </span>
+				
+			</div>
+			<div class="info-detail">
+				<h6 class="title">宝宝辅食添加，“雷区”有哪些？</h6>
+				<div class="info-footer">
+					<span class="create-time">4月18日</span>
+				</div>
+			</div>
+		</a>
+	
+		<a class="news-info-item " href="/pc/video/164/?lecture_id=170" target="_blank">
+			<div class="info-pic-wrap video-type">
+				<img class="info-pic" src="picture/278ff0906dad_w750_h320__1.jpg">
+				
+					<span class="duration"> 65:11 </span>
+				
+			</div>
+			<div class="info-detail">
+				<h6 class="title">你敢让人工智能给你看病吗？</h6>
+				<div class="info-footer">
+					<span class="create-time">4月19日</span>
+				</div>
+			</div>
+		</a>
+	
+		<a class="news-info-item " href="/pc/video/155/?lecture_id=161" target="_blank">
+			<div class="info-pic-wrap video-type">
+				<img class="info-pic" src="picture/ee783c52c6d7_w750_h320__1.jpg">
+				
+					<span class="duration"> 64:15 </span>
+				
+			</div>
+			<div class="info-detail">
+				<h6 class="title">性教育会让孩子提早学坏吗？</h6>
+				<div class="info-footer">
+					<span class="create-time">4月12日</span>
+				</div>
+			</div>
+		</a>
+	
+		<a class="news-info-item " href="/pc/video/149/?lecture_id=155" target="_blank">
+			<div class="info-pic-wrap video-type">
+				<img class="info-pic" src="picture/2967c1fa5347_w750_h320__1.jpg">
+				
+					<span class="duration"> 53:38 </span>
+				
+			</div>
+			<div class="info-detail">
+				<h6 class="title">感觉身体被掏空，真的是肾亏？</h6>
+				<div class="info-footer">
+					<span class="create-time">4月11日</span>
+				</div>
+			</div>
+		</a>
+	
+		<a class="news-info-item " href="/pc/video/146/?lecture_id=152" target="_blank">
+			<div class="info-pic-wrap video-type">
+				<img class="info-pic" src="picture/23ed9aa73fcc_w750_h320__1.jpg">
+				
+					<span class="duration"> 53:38 </span>
+				
+			</div>
+			<div class="info-detail">
+				<h6 class="title">神棍为啥能“治病”？</h6>
+				<div class="info-footer">
+					<span class="create-time">3月29日</span>
+				</div>
+			</div>
+		</a>
+	
+	</div>
+	<div class="no-more">没有更多了</div>
+</div>
+
+	</div>
+</div>
+
+
+	 
+<div class="ly-ft footer" id="footer">
+    <div class="inner">
+        <div class="ly-lst-contacts">
+            <a class="ly-contacts" target="_blank" href="/cooperation/open_api/">开放平台</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#aboutCY">关于春雨</a>
+            <a class="ly-contacts" target="_blank" href="/api/news/chunyu/list/">公司动态</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#position">加入春雨</a>
+            <a class="ly-contacts" target="_blank" href="/contact">联系我们</a>
+            <a class="ly-contacts" target="_blank" href="/pedometer">春雨计步器</a>
+        </div>
+        <div class="ly-copyright">
+                <p>
+                    Copyright &copy; 2011-2017
+                    <a href="http://www.chunyuyisheng.com/">北京春雨天下软件有限公司</a> 
+                    All Rights Reserved
+                </p>
+            <p>京ICP证120150号&nbsp; 京ICP备12050281号-1&nbsp; 京卫网审[2014]第0335号</p>
+        </div>
+        <div class="footer-copyright">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020212">
+                <img src="picture/bede9876c388_w20_h20__1.png"/>
+                <p>京公网安备 11010802020212号</p>
+            </a>
+        </div>
+    </div>
+</div> 
+
+
+
+
+<script type="text/javascript" src="js/common_pkg_6c99336_1.js"></script>
+<script type="text/javascript">/*resourcemap*/
+</script>
+
+
+<!--[if lte IE 8]>
+	<script src="js/es5-shim.min_1.js"></script>
+	<script src="js/es5-sham.min_1.js"></script>
+<![endif]-->
+
+
+
+	<script type="text/javascript" src="js/health_news_aio_3d32c6c_1.js"></script>
+
+ 
+	
+		<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c153f37e6f66b16b2d34688c92698e4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+	
+
+
+</body>
+</html>

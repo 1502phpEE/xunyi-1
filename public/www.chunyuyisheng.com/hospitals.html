@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="北京全部类型医院，用于帮助患者查找合适的医生">
+
+    
+	<meta name="keywords" content="北京医院，按医院找医生" />
+
+
+    <title>北京全部类型医院-春雨医生</title>
+
+    
+    <link rel="shortcut icon" href="http://media2.chunyuyisheng.com/@/static/favicon.ico"/>
+    
+
+    <!--fis编译该 html 后自动引入的 css 放置位置-->
+        
+
+    
+	    <link rel="stylesheet" href="css/base_aio_05ae397_1.css" />
+
+    
+    <link rel="stylesheet" href="css/search_by_hospital_f796ceb_1.css" />
+
+    
+    <script type="text/javascript" src="js/tingyun_00f951b_1.js"></script>
+    
+
+    <!--项目公共head js放置区域-->
+</head>
+<body>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie_pollify_fd50e64_1.css"/>
+	<![endif]-->
+	 <div class="header-top-wrap">
+	<div class="ui-grid header-top">
+		<ul class="quick-menu">
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">用户端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/cyapp@2x_647fc8c_1.png" alt="春雨医生二维码">
+					<div class="content">
+						<span class="tit">春雨医生App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨医生App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">医生端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/ysd@2x_fe06db9_1.png" alt="春雨诊所二维码">
+					<div class="content">
+						<span class="tit">春雨诊所App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨诊所App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown weixin-dropdown">
+				<a href="javascript:void(0)">微信公众号</a>
+				<div class="qr-code-wrap">
+					<div class="qr-item">
+						<img src="picture/fwh@2x_f508d46_1.png" alt="微信公众号二维码">
+						<div class="content">
+							<span class="tit">微信公众号</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">关注春雨医生公众号</span>
+						</div>
+					</div>
+					<div class="qr-item qr-item-last">
+						<img src="picture/xcx@2x_5af9b32_1.png" alt="春雨医生小程序二维码">
+						<div class="content">
+							<span class="tit">小程序 春雨医生+</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">无需下载快速问诊</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-normal"><a href="http://m.chunyuyisheng.com/" target="_blank">触屏版</a></li>
+			<li class="menu-item menu-normal last"><a href="/clinic/register/"  target="_blank">医生入口</a></li>
+		</ul>
+	</div>
+</div> 
+
+	 <div class="header-bd ui-grid clearfix"> 
+	<h1 class="logo">
+		<a href="/"><img src="picture/logo@2x_8244314_1.png" alt="春雨医生"></a>
+	</h1>
+	<div class="search-container">
+		<form action="/pc/search" autocomplete="off">
+			<input class="query" type="text" id="query" name="query" placeholder="搜医生、医院、疾病、症状、资讯" value="">
+			<button class="search-btn" type="submit"></button>
+		</form>
+	</div>
+	<div class="user-contanier">
+	
+		<a class="login－wrap user-item" href="/ssl/api/weblogin/?next=/pc/hospitals/">
+			<i class="icon-login"></i>
+			<span>登录</span>
+		</a>
+		<a class="register-wrap user-item" href="/register?next=/pc/hospitals/">
+			<i class="icon-register"></i>
+			<span>注册</span>
+		</a>
+	
+	</div>
+</div> 
+
+	 <ul class="nav-list ui-grid">
+	<li class="nav-item">
+		<a href="/">首页</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/diseasesdoc/">按疾病找医生</a>
+	</li>
+	<li class="nav-item cur">
+		<a href="/pc/hospitals/">按医院找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/doctors/">按科室找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/qalist/">经典问答</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/health_news/">健康资讯</a>
+	</li>
+	<li class="nav-item last">
+		<a href="/pc/disease/hot/">疾病知识库</a>
+	</li>
+</ul> 
+
+	
+<div class="ui-grid ui-main">
+    <ul class="city">
+        
+            <li><a class="cur" href="javascript:void(0)">北京</a></li>
+        
+            <li><a  href="javascript:void(0)">天津</a></li>
+        
+            <li><a  href="javascript:void(0)">重庆</a></li>
+        
+            <li><a  href="javascript:void(0)">上海</a></li>
+        
+            <li><a  href="javascript:void(0)">河北</a></li>
+        
+            <li><a  href="javascript:void(0)">山西</a></li>
+        
+            <li><a  href="javascript:void(0)">辽宁</a></li>
+        
+            <li><a  href="javascript:void(0)">吉林</a></li>
+        
+            <li><a  href="javascript:void(0)">黑龙江</a></li>
+        
+            <li><a  href="javascript:void(0)">江苏</a></li>
+        
+            <li><a  href="javascript:void(0)">浙江</a></li>
+        
+            <li><a  href="javascript:void(0)">安徽</a></li>
+        
+            <li><a  href="javascript:void(0)">福建</a></li>
+        
+            <li><a  href="javascript:void(0)">江西</a></li>
+        
+            <li><a  href="javascript:void(0)">山东</a></li>
+        
+            <li><a  href="javascript:void(0)">河南</a></li>
+        
+            <li><a  href="javascript:void(0)">湖北</a></li>
+        
+            <li><a  href="javascript:void(0)">湖南</a></li>
+        
+            <li><a  href="javascript:void(0)">广东</a></li>
+        
+            <li><a  href="javascript:void(0)">海南</a></li>
+        
+            <li><a  href="javascript:void(0)">四川</a></li>
+        
+            <li><a  href="javascript:void(0)">贵州</a></li>
+        
+            <li><a  href="javascript:void(0)">云南</a></li>
+        
+            <li><a  href="javascript:void(0)">陕西</a></li>
+        
+            <li><a  href="javascript:void(0)">甘肃</a></li>
+        
+            <li><a  href="javascript:void(0)">青海</a></li>
+        
+            <li><a  href="javascript:void(0)">台湾</a></li>
+        
+            <li><a  href="javascript:void(0)">内蒙古</a></li>
+        
+            <li><a  href="javascript:void(0)">广西</a></li>
+        
+            <li><a  href="javascript:void(0)">宁夏</a></li>
+        
+            <li><a  href="javascript:void(0)">新疆</a></li>
+        
+            <li><a  href="javascript:void(0)">西藏</a></li>
+        
+    </ul>
+    <div class="category">
+        <ul>
+            
+                <li class="cur" data-id="0"><a href="javascript:void(0)">全部类型</a></li>
+            
+                <li  data-id="1"><a href="javascript:void(0)">综合医院</a></li>
+            
+                <li  data-id="2"><a href="javascript:void(0)">肿瘤医院</a></li>
+            
+                <li  data-id="3"><a href="javascript:void(0)">口腔医院</a></li>
+            
+                <li  data-id="4"><a href="javascript:void(0)">妇产医院</a></li>
+            
+                <li  data-id="5"><a href="javascript:void(0)">中医医院</a></li>
+            
+                <li  data-id="6"><a href="javascript:void(0)">精神病医院</a></li>
+            
+                <li  data-id="7"><a href="javascript:void(0)">传染病医院</a></li>
+            
+                <li  data-id="8"><a href="javascript:void(0)">儿童医院</a></li>
+            
+                <li  data-id="9"><a href="javascript:void(0)">胸科医院</a></li>
+            
+                <li  data-id="10"><a href="javascript:void(0)">眼科医院</a></li>
+            
+                <li  data-id="11"><a href="javascript:void(0)">骨科医院</a></li>
+            
+                <li  data-id="12"><a href="javascript:void(0)">肛肠医院</a></li>
+            
+                <li  data-id="13"><a href="javascript:void(0)">康复医院</a></li>
+            
+                <li  data-id="14"><a href="javascript:void(0)">五官医院</a></li>
+            
+                <li  data-id="15"><a href="javascript:void(0)">其他医院</a></li>
+            
+        </ul>
+    </div>
+    <div class="chosen">
+        <label>已选择</label>
+        <ul id="chosen-list">
+            <li>北京</li>
+            <li>全部类型</li>
+        </ul>
+        <i>共找到<span class="chosen-city">北京</span>全部类型 <span class="num">78</span> 家</i>
+    </div>
+    
+        <div class="list">
+            <label>西城区</label>
+            <ul>
+                
+                    <li><a title="宣武医院" href="/pc/hospital/1cd239857cc8655a/"><i>宣武医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学宣武医院" href="/pc/hospital/3c7328db652e8dc0/"><i>首都医科大学宣武医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京大学第一医院" href="/pc/hospital/4d6ff71dc4fff5a6/"><i>北京大学第一医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京安定医院" href="/pc/hospital/770899a032c0f784/"><i>北京安定医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国残疾人联合会北京按摩医院(原:北京市按摩医院)" href="/pc/hospital/7bb6cd96dbfc860f/"><i>中国残疾人联合会北京按摩医院(原:北京市按摩医院)</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京友谊医院" href="/pc/hospital/9b1f2803e5fe0c44/"><i>首都医科大学附属北京友谊医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京大学人民医院" href="/pc/hospital/ad2eb86032e3c33d/"><i>北京大学人民医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国医学科学院阜外心血管病医院" href="/pc/hospital/b1266f48e63aa14f/"><i>中国医学科学院阜外心血管病医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京市宣武中医医院" href="/pc/hospital/c05db4d73342ce94/"><i>北京市宣武中医医院</i><span>(三级乙等)</span></a></li>
+                
+                    <li><a title="305医院" href="/pc/hospital/ca7d1ea4f2b19acc/"><i>305医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京儿童医院" href="/pc/hospital/cf7c589e32f50ca1/"><i>首都医科大学附属北京儿童医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="广安门中医院" href="/pc/hospital/d8afa25a31eae28d/"><i>广安门中医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京积水潭医院" href="/pc/hospital/e7101243078d1515/"><i>北京积水潭医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>石景山区</label>
+            <ul>
+                
+                    <li><a title="中国医学科学院整形外科医院" href="/pc/hospital/21fbafc48e40c2ca/"><i>中国医学科学院整形外科医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国医学科学院整形外科医院" href="/pc/hospital/e6a23eeea1d7bb2a/"><i>中国医学科学院整形外科医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>通州区</label>
+            <ul>
+                
+                    <li><a title="中国人民解放军第二六三医院" href="/pc/hospital/6ebfba9e80d58b81/"><i>中国人民解放军第二六三医院</i><span>(二级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>顺义区</label>
+            <ul>
+                
+                    <li><a title="北京市顺义区医院" href="/pc/hospital/7bba379d94b9fa48/"><i>北京市顺义区医院</i><span>(三级丙等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京地坛医院" href="/pc/hospital/8bv75ur2f3il4h1c/"><i>首都医科大学附属北京地坛医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>门头沟区</label>
+            <ul>
+                
+                    <li><a title="北京市门头沟区妇幼保健院" href="/pc/hospital/8l069bvjrpcywkze/"><i>北京市门头沟区妇幼保健院</i><span>(二级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>朝阳区</label>
+            <ul>
+                
+                    <li><a title="北京朝阳医院" href="/pc/hospital/1d6be30e344eb8c8/"><i>北京朝阳医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京朝阳急诊抢救中心" href="/pc/hospital/2ffa637bad562e43/"><i>北京朝阳急诊抢救中心</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="煤炭总医院" href="/pc/hospital/3fdb9ffa3acde076/"><i>煤炭总医院</i><span>(三级丙等)</span></a></li>
+                
+                    <li><a title="首都儿科研究所附属儿童医院" href="/pc/hospital/4a1b689cda6c52e5/"><i>首都儿科研究所附属儿童医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北大口腔医院第二门诊部" href="/pc/hospital/6a8a8b245c718297/"><i>北大口腔医院第二门诊部</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="民航总医院" href="/pc/hospital/70a566a4ed0447dc/"><i>民航总医院</i><span>(三级丙等)</span></a></li>
+                
+                    <li><a title="儿研所" href="/pc/hospital/730e045a0cab08ee/"><i>儿研所</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京中日友好医院" href="/pc/hospital/818183d164efc77c/"><i>北京中日友好医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京朝阳医院" href="/pc/hospital/bf61dbcf8eb8d521/"><i>首都医科大学附属北京朝阳医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京安贞医院" href="/pc/hospital/c4346bc1d6e7fac1/"><i>首都医科大学附属北京安贞医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国医学科学院肿瘤医院" href="/pc/hospital/cf4c9f220566f5bd/"><i>中国医学科学院肿瘤医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京妇产医院" href="/pc/hospital/d908b22ced2151b8/"><i>北京妇产医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京地坛医院" href="/pc/hospital/dc786d0294df9250/"><i>北京地坛医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="医科院肿瘤医院" href="/pc/hospital/ea858e9bcc780caf/"><i>医科院肿瘤医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京中医药大学第三附属医院" href="/pc/hospital/edaa80eff575c530/"><i>北京中医药大学第三附属医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="解放军第306医院" href="/pc/hospital/fd2d4d3220ac3c8f/"><i>解放军第306医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>海淀区</label>
+            <ul>
+                
+                    <li><a title="北京大学第六医院" href="/pc/hospital/3cbe7273205c34e3/"><i>北京大学第六医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="海军总医院" href="/pc/hospital/51f50ae65281ef86/"><i>海军总医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国人民解放军空军总医院" href="/pc/hospital/5349f864479ebf49/"><i>中国人民解放军空军总医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国中医科学院西苑医院" href="/pc/hospital/5c0bf0c726086510/"><i>中国中医科学院西苑医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京大学口腔医院" href="/pc/hospital/6200fcc238ecdc17/"><i>北京大学口腔医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京老年医院" href="/pc/hospital/6a51873e762899f2/"><i>北京老年医院</i><span>(三级丙等)</span></a></li>
+                
+                    <li><a title="中国人民解放军海军总医院" href="/pc/hospital/9c328b79d9fb625a/"><i>中国人民解放军海军总医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="武警总医院" href="/pc/hospital/a954126543a7ba9d/"><i>武警总医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="世纪坛医院" href="/pc/hospital/cdf125d406938d02/"><i>世纪坛医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京大学第三医院" href="/pc/hospital/f0158d48cd797047/"><i>北京大学第三医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>东城区</label>
+            <ul>
+                
+                    <li><a title="北京军区总医院/陆军总医院" href="/pc/hospital/211358e93fc67332/"><i>北京军区总医院/陆军总医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京隆福医院" href="/pc/hospital/33f72152bacc03c1/"><i>北京隆福医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京口腔医院" href="/pc/hospital/8198ffa72a8fb554/"><i>首都医科大学附属北京口腔医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中医研究院骨伤医院" href="/pc/hospital/a7ca5bd0b2c88063/"><i>中医研究院骨伤医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京中医医院" href="/pc/hospital/bbc8b6c2f2cb2f62/"><i>首都医科大学附属北京中医医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="卫生部北京医院" href="/pc/hospital/d01a07062e14079b/"><i>卫生部北京医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中医科学院针灸医院" href="/pc/hospital/dc2935e99cd222c4/"><i>中医科学院针灸医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="首都医科大学附属北京同仁医院" href="/pc/hospital/ecadf0fdc0a8c71c/"><i>首都医科大学附属北京同仁医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京天坛医院" href="/pc/hospital/ece6e6b9a1ea3f7d/"><i>北京天坛医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>丰台区</label>
+            <ul>
+                
+                    <li><a title="307医院" href="/pc/hospital/161055c8656997b4/"><i>307医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京博爱医院" href="/pc/hospital/74684d35f00a5fdc/"><i>北京博爱医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京中医药大学东方医院" href="/pc/hospital/90149075fe828034/"><i>北京中医药大学东方医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京中医药大学东方医院" href="/pc/hospital/bfd20c85e71dac43/"><i>北京中医药大学东方医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>北京市</label>
+            <ul>
+                
+                    <li><a title="北京佑安医院" href="/pc/hospital/15874115464eba72/"><i>北京佑安医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京协和医院" href="/pc/hospital/1f4a9d4915cffa55/"><i>北京协和医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京大学肿瘤医院" href="/pc/hospital/262065e04c1d4667/"><i>北京大学肿瘤医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京中西医结合医院" href="/pc/hospital/483c3263d3e63e5d/"><i>北京中西医结合医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="蓟门里社区卫生服务中心" href="/pc/hospital/4ysdm3go0krixflb/"><i>蓟门里社区卫生服务中心</i><span>(社区卫生服务中心（站）)</span></a></li>
+                
+                    <li><a title="北京市监狱管理局中心医院" href="/pc/hospital/8d848d198e21e7ab/"><i>北京市监狱管理局中心医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="北京天坛医院" href="/pc/hospital/9jdwt4amx0vk56p8/"><i>北京天坛医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="中国人民解放军总医院" href="/pc/hospital/9vl6fxgqt0sc1knh/"><i>中国人民解放军总医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京怀柔医院" href="/pc/hospital/cs7joa280zl3g5hw/"><i>北京怀柔医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="北京市房山区良乡医院" href="/pc/hospital/k28iyp9t74sbd6o0/"><i>北京市房山区良乡医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="航天中心医院" href="/pc/hospital/kywbqx3ao2zf1dum/"><i>航天中心医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京市昌平区中西医结合医院" href="/pc/hospital/macvxn6d13gr57wq/"><i>北京市昌平区中西医结合医院</i><span>(二级丙等)</span></a></li>
+                
+                    <li><a title="北京燕化凤凰医院" href="/pc/hospital/osghu24mln810ebv/"><i>北京燕化凤凰医院</i><span>(三级丙等)</span></a></li>
+                
+                    <li><a title="中国聋儿康复研究中心听力门诊部" href="/pc/hospital/q5tc6iw8v9e0mpf7/"><i>中国聋儿康复研究中心听力门诊部</i><span>(协会)</span></a></li>
+                
+                    <li><a title="清华大学玉泉医院" href="/pc/hospital/r7gniax2t0pmwlj5/"><i>清华大学玉泉医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="北京市大兴区中西医结合医院" href="/pc/hospital/sphq37m9wjogfdr5/"><i>北京市大兴区中西医结合医院</i><span>(三级乙等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>昌平区</label>
+            <ul>
+                
+                    <li><a title="北京大学国际医院" href="/pc/hospital/0e0e05711d91b08d/"><i>北京大学国际医院</i><span>(三级甲等)</span></a></li>
+                
+                    <li><a title="北京清华长庚医院" href="/pc/hospital/8100b1f6cb42a4dc/"><i>北京清华长庚医院</i><span>(三级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="list">
+            <label>大兴区</label>
+            <ul>
+                
+                    <li><a title="北京市仁和医院" href="/pc/hospital/28d34e385f233bd2/"><i>北京市仁和医院</i><span>(二级甲等)</span></a></li>
+                
+                    <li><a title="北京市大兴区妇幼保健院" href="/pc/hospital/873b71315c6ccdf4/"><i>北京市大兴区妇幼保健院</i><span>(二级甲等)</span></a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<br/>
+
+
+	 
+<div class="ly-ft footer" id="footer">
+    <div class="inner">
+        <div class="ly-lst-contacts">
+            <a class="ly-contacts" target="_blank" href="/cooperation/open_api/">开放平台</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#aboutCY">关于春雨</a>
+            <a class="ly-contacts" target="_blank" href="/api/news/chunyu/list/">公司动态</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#position">加入春雨</a>
+            <a class="ly-contacts" target="_blank" href="/contact">联系我们</a>
+            <a class="ly-contacts" target="_blank" href="/pedometer">春雨计步器</a>
+        </div>
+        <div class="ly-copyright">
+                <p>
+                    Copyright &copy; 2011-2017
+                    <a href="http://www.chunyuyisheng.com/">北京春雨天下软件有限公司</a> 
+                    All Rights Reserved
+                </p>
+            <p>京ICP证120150号&nbsp; 京ICP备12050281号-1&nbsp; 京卫网审[2014]第0335号</p>
+        </div>
+        <div class="footer-copyright">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020212">
+                <img src="picture/bede9876c388_w20_h20__1.png"/>
+                <p>京公网安备 11010802020212号</p>
+            </a>
+        </div>
+    </div>
+</div> 
+
+
+
+
+<script type="text/javascript" src="js/common_pkg_6c99336_1.js"></script>
+<script type="text/javascript">/*resourcemap*/
+</script>
+
+
+<!--[if lte IE 8]>
+	<script src="js/es5-shim.min_1.js"></script>
+	<script src="js/es5-sham.min_1.js"></script>
+<![endif]-->
+
+
+
+<script type="text/javascript" src="js/search_by_hospital_4069c96_1.js"></script>
+
+ 
+	
+		<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c153f37e6f66b16b2d34688c92698e4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+	
+
+ 
+	
+		
+<script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?12035ad3ce03fc3f1c6d340c9a1ff41b":"https://jspassport.ssl.qhimg.com/11.0.1.js?12035ad3ce03fc3f1c6d340c9a1ff41b";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else{
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script> 
+	
+
+</body>
+</html>

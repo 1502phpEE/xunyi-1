@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="相关的疾病、医生、咨询记录、科普知识">
+
+    
+	<meta name="keywords" content="、疾病、医生、咨询记录、科普知识" />
+
+
+    <title>
+	相关疾病、医生、咨询记录、科普知识-春雨医生
+</title>
+
+    
+    <link rel="shortcut icon" href="http://media2.chunyuyisheng.com/@/static/favicon.ico"/>
+    
+
+    <!--fis编译该 html 后自动引入的 css 放置位置-->
+        
+
+    
+	    <link rel="stylesheet" href="css/base_aio_05ae397_1.css" />
+
+    
+    <link rel="stylesheet" type="text/css" href="css/disease_detail_99c0521_1.css" />
+
+    
+    <script type="text/javascript" src="js/tingyun_00f951b_1.js"></script>
+    
+
+    <!--项目公共head js放置区域-->
+</head>
+<body>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/ie_pollify_fd50e64_1.css"/>
+	<![endif]-->
+	 <div class="header-top-wrap">
+	<div class="ui-grid header-top">
+		<ul class="quick-menu">
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">用户端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/cyapp@2x_647fc8c_1.png" alt="春雨医生二维码">
+					<div class="content">
+						<span class="tit">春雨医生App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨医生App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown">
+				<a href="javascript:void(0)">医生端App</a>
+				<div class="qr-code-wrap">
+					<img src="picture/ysd@2x_fe06db9_1.png" alt="春雨诊所二维码">
+					<div class="content">
+						<span class="tit">春雨诊所App</span>
+						<span class="sub-tit">扫描二维码</span>
+						<span class="sub-tit">安装春雨诊所App</span>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-dropdown weixin-dropdown">
+				<a href="javascript:void(0)">微信公众号</a>
+				<div class="qr-code-wrap">
+					<div class="qr-item">
+						<img src="picture/fwh@2x_f508d46_1.png" alt="微信公众号二维码">
+						<div class="content">
+							<span class="tit">微信公众号</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">关注春雨医生公众号</span>
+						</div>
+					</div>
+					<div class="qr-item qr-item-last">
+						<img src="picture/xcx@2x_5af9b32_1.png" alt="春雨医生小程序二维码">
+						<div class="content">
+							<span class="tit">小程序 春雨医生+</span>
+							<span class="sub-tit">扫描二维码</span>
+							<span class="sub-tit">无需下载快速问诊</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item menu-normal"><a href="http://m.chunyuyisheng.com/" target="_blank">触屏版</a></li>
+			<li class="menu-item menu-normal last"><a href="/clinic/register/"  target="_blank">医生入口</a></li>
+		</ul>
+	</div>
+</div> 
+
+	 <div class="header-bd ui-grid clearfix"> 
+	<h1 class="logo">
+		<a href="/"><img src="picture/logo@2x_8244314_1.png" alt="春雨医生"></a>
+	</h1>
+	<div class="search-container">
+		<form action="/pc/search" autocomplete="off">
+			<input class="query" type="text" id="query" name="query" placeholder="搜医生、医院、疾病、症状、资讯" value="">
+			<button class="search-btn" type="submit"></button>
+		</form>
+	</div>
+	<div class="user-contanier">
+	
+		<a class="login－wrap user-item" href="/ssl/api/weblogin/?next=/pc/search/">
+			<i class="icon-login"></i>
+			<span>登录</span>
+		</a>
+		<a class="register-wrap user-item" href="/register?next=/pc/search/">
+			<i class="icon-register"></i>
+			<span>注册</span>
+		</a>
+	
+	</div>
+</div> 
+
+	 <ul class="nav-list ui-grid">
+	<li class="nav-item">
+		<a href="/">首页</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/diseasesdoc/">按疾病找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/hospitals/">按医院找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/doctors/">按科室找医生</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/qalist/">经典问答</a>
+	</li>
+	<li class="nav-item">
+		<a href="/pc/health_news/">健康资讯</a>
+	</li>
+	<li class="nav-item last">
+		<a href="/pc/disease/hot/">疾病知识库</a>
+	</li>
+</ul> 
+
+	
+<div class="ui-grid ui-main clearfix">
+
+
+
+	
+	
+	<div class="title-wrap">
+		<h6 class="title">医生推荐</h6>
+	</div>
+	<div class="doctor-list">
+		
+<div class="doctor-info-item j-unavailable first">
+	<div class="avatar-wrap">
+		<img src="picture/c9a336e5e825_1.jpg">
+		
+	</div>
+	<div class="detail">
+		<a class="name-wrap" href="/pc/doctor/clinic_web_c7a996b24df56e9f/" target="_blank">
+			<span class="name">时岩&nbsp;</span>
+			<span class="clinic">皮肤性病科</span>
+			<span class="grade">副主任医师</span>
+		</a>
+		<p class="hospital"> 中国人民解放军第四军医大学西京医院 </p>
+		<p class="des">擅长：湿疹、痤疮、荨麻疹、皮炎、抗过敏、皮疹</p>
+	</div>
+</div>
+
+<div class="doctor-info-item j-unavailable ">
+	<div class="avatar-wrap">
+		<img src="picture/47049900428a_w1074_h1074__1.jpg">
+		
+	</div>
+	<div class="detail">
+		<a class="name-wrap" href="/pc/doctor/clinic_web_b1e6054125352447/" target="_blank">
+			<span class="name">周芳&nbsp;</span>
+			<span class="clinic">皮肤性病科</span>
+			<span class="grade">主治医师</span>
+		</a>
+		<p class="hospital"> 北京大学第三医院 </p>
+		<p class="des">擅长：痤疮、湿疹、脂溢性皮炎、银屑病、体癣、甲真菌病</p>
+	</div>
+</div>
+
+<div class="doctor-info-item j-unavailable ">
+	<div class="avatar-wrap">
+		<img src="picture/40cd5ac94239_w388_h388__1.jpg">
+		
+	</div>
+	<div class="detail">
+		<a class="name-wrap" href="/pc/doctor/clinic_web_8c04490e7e4a9e9b/" target="_blank">
+			<span class="name">蒋远文&nbsp;</span>
+			<span class="clinic">皮肤性病科</span>
+			<span class="grade">主治医师</span>
+		</a>
+		<p class="hospital"> 中山大学附属第一医院 </p>
+		<p class="des">擅长：皮肤病、性病、湿疹、水疱、毛囊炎、皮损</p>
+	</div>
+</div>
+
+<div class="doctor-info-item j-unavailable ">
+	<div class="avatar-wrap">
+		<img src="picture/838978e342ee_w116_h116__1.jpg">
+		
+	</div>
+	<div class="detail">
+		<a class="name-wrap" href="/pc/doctor/clinic_web_e601b7fcd4836511/" target="_blank">
+			<span class="name">田军&nbsp;</span>
+			<span class="clinic">皮肤性病科</span>
+			<span class="grade">主治医师</span>
+		</a>
+		<p class="hospital"> 中国人民解放军第四军医大学西京医院 </p>
+		<p class="des">擅长：白癜风、黑素瘤、银屑病、痤疮、黄褐斑、痣</p>
+	</div>
+</div>
+
+<div class="doctor-info-item j-unavailable ">
+	<div class="avatar-wrap">
+		<img src="picture/d7ae82a6bf03_w960_h960__1.jpg">
+		
+	</div>
+	<div class="detail">
+		<a class="name-wrap" href="/pc/doctor/clinic_web_b9f9761200f95944/" target="_blank">
+			<span class="name">吕雪莲&nbsp;</span>
+			<span class="clinic">皮肤性病科</span>
+			<span class="grade">主任医师</span>
+		</a>
+		<p class="hospital"> 首都医科大学附属北京安贞医院 </p>
+		<p class="des">擅长：真菌病、痤疮、青春痘、化妆品皮炎、银屑病、湿疹</p>
+	</div>
+</div>
+
+	</div>
+	
+	
+	
+	
+	
+
+</div>
+
+
+	 
+<div class="ly-ft footer" id="footer">
+    <div class="inner">
+        <div class="ly-lst-contacts">
+            <a class="ly-contacts" target="_blank" href="/cooperation/open_api/">开放平台</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#aboutCY">关于春雨</a>
+            <a class="ly-contacts" target="_blank" href="/api/news/chunyu/list/">公司动态</a>
+            <a class="ly-contacts" target="_blank" href="/joinus#position">加入春雨</a>
+            <a class="ly-contacts" target="_blank" href="/contact">联系我们</a>
+            <a class="ly-contacts" target="_blank" href="/pedometer">春雨计步器</a>
+        </div>
+        <div class="ly-copyright">
+                <p>
+                    Copyright &copy; 2011-2017
+                    <a href="http://www.chunyuyisheng.com/">北京春雨天下软件有限公司</a> 
+                    All Rights Reserved
+                </p>
+            <p>京ICP证120150号&nbsp; 京ICP备12050281号-1&nbsp; 京卫网审[2014]第0335号</p>
+        </div>
+        <div class="footer-copyright">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020212">
+                <img src="picture/bede9876c388_w20_h20__1.png"/>
+                <p>京公网安备 11010802020212号</p>
+            </a>
+        </div>
+    </div>
+</div> 
+
+
+
+
+<script type="text/javascript" src="js/common_pkg_6c99336_1.js"></script>
+<script type="text/javascript">/*resourcemap*/
+</script>
+
+
+<!--[if lte IE 8]>
+	<script src="js/es5-shim.min_1.js"></script>
+	<script src="js/es5-sham.min_1.js"></script>
+<![endif]-->
+
+
+
+	<script type="text/javascript" src="js/disease_detail_78db8f0_1.js"></script>
+
+ 
+	
+		<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?c153f37e6f66b16b2d34688c92698e4b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+	
+
+ 
+	
+		
+<script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?12035ad3ce03fc3f1c6d340c9a1ff41b":"https://jspassport.ssl.qhimg.com/11.0.1.js?12035ad3ce03fc3f1c6d340c9a1ff41b";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else{
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script> 
+	
+
+</body>
+</html>

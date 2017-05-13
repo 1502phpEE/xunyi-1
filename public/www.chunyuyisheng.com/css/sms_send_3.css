@@ -1,0 +1,12 @@
+﻿.captcha {
+    cursor: pointer;
+}
+
+#captchaInputs {
+    line-height: 40px;
+}
+
+#captchaHelper {
+    color: #aaa;
+    font-size: 11px;
+}
